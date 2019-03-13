@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-navigation": "/components/navigation/navigation",
+    "v-search": "/components/search/index"
+  }
+}

@@ -1,0 +1,70 @@
+<!--pages/order-detail/order-detail.wxml-->
+<view class='status'>
+  <image src='/images/order.png'></image>
+  <text>等待商家发货</text>
+</view>
+<view class='add-con'>
+  <view class='add-list'>
+    <view class='add-item'>
+      <view class='left'>
+        <view>
+          <text class='name'>收货人：刘舒龙</text>
+          <text class='call'>16879709757</text>
+        </view>
+        <text style='margin-top: 20rpx;display:block;color:#999'>厦门市思明区火车站万象城</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="orderListDetails">
+  <view class="productImg">
+    <image src="https://ww4.sinaimg.cn/bmiddle/473df571ly1g0mgmawsc3j20u00u0nop.jpg" background-size="cover"></image>
+  </view>
+  <view class="productInfo">
+    <text class="productPrice">雅诗兰黛小棕瓶</text>
+    <view class="productTitle">预定时间: 2019-9-21</view>
+    <navigator url='../return/return'>申请退款</navigator>
+  </view>
+</view>
+<view class="productCount">
+  <view>
+    <text>合计：￥78</text>
+  </view>
+</view>
+
+<view class='info-list'>
+   <view class='item clear'>
+      <text>配送方式</text>
+      <view>免运费</view>
+      <!-- <text>快递发货</text> -->
+   </view>
+   <view class='item clear'>
+      <text>买家留言</text>
+      <view>无</view>
+   </view>
+</view>
+
+<view class='info-list'>
+   <view class='item clear'>
+      <text>商品金额</text>
+      <view class='fx'>￥79</view>
+      <!-- <text>快递发货</text> -->
+   </view>
+   <view class='item clear'>
+      <text>运费</text>
+      <view class='fx'>+￥9</view>
+   </view>
+   <view class='item clear'>
+      <text>付款方式</text>
+      <view>微信支付</view>
+   </view>
+   <button open-type='contact'>联系客服</button>
+</view>
+
+<view class='order-info'>
+   <text>订单编号：638796967000000000000000</text>
+   <text>创建时间：7777777777777777777777777777</text>
+   <text>付款时间：2019-7-31</text>
+</view>
+

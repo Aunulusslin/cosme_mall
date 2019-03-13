@@ -1,0 +1,308 @@
+/* pages/secKill-detail/secKill-detail.wxss */
+
+page {
+  padding-bottom: 100rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 670rpx;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 20rpx;
+  background: #ba352e;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.buy-num {
+  width: 60%;
+}
+
+.center {
+  display: flex;
+  padding: 20rpx 20rpx;
+  line-height: 38rpx;
+  border-bottom: 1px solid #ececec;
+}
+
+.center-time {
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+}
+
+.btn {
+  width: 80rpx;
+  height: 30rpx;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  color: #ba352e;
+  border-radius: 90rpx;
+}
+
+.title {
+  height: 356rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.title-one {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.title-two {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.before {
+  font-size: 34rpx;
+}
+
+.after {
+  font-size: 28rpx;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.tag-one {
+  height: 60rpx;
+  background: #f2f2f2;
+}
+
+.tag-one image {
+  width: 36rpx;
+  height: 36rpx;
+  padding-right: 30rpx;
+  position: relative;
+  top: 10rpx;
+  left: 20rpx;
+  align-items: center;
+}
+
+.tag-one text {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.coupon text {
+  font-size: 24rpx;
+  position: relative;
+  top: 8rpx;
+}
+
+.coupon {
+  height: 82rpx;
+}
+
+.coupon-list {
+  color: #ba352e;
+  text-align: center;
+  display: inline-block;
+  width: 160rpx;
+  height: 34rpx;
+  position: relative;
+  left: 20rpx;
+  background: url("https://hk.yqnwh.com/pictureFrameFile/upload/20190308113741700894.jpeg") no-repeat;
+  background-size: 160rpx 34rpx;
+}
+
+.coupon image {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  padding: 16rpx 0;
+}
+
+.slit {
+  height: 40rpx;
+  background: #f2f2f2;
+}
+
+.choice {
+  padding: 20rpx 20rpx;
+}
+
+.tag-b {
+  width: auto;
+  padding: 10rpx 10rpx;
+  height: 10rpx;
+  border: 1rpx solid #ba352e;
+  color: #ba352e;
+  border-radius: 10rpx;
+}
+
+.choice-list {
+  margin-left: 20rpx;
+}
+
+.choice {
+}
+
+.brand {
+  padding: 20rpx 20rpx;
+}
+
+.brand-name {
+  font-size: 32rpx;
+}
+
+.brand-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.brand-detail image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.brand-detail>view {
+  width: 500rpx;
+  font-size: 28rpx;
+  height: 180rpx;
+  overflow: hidden;
+  color: #666;
+}
+
+.header {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.header image:first-child {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90rpx;
+}
+
+.header text {
+  font-size: 28rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #333;
+  padding: 20rpx 0;
+  height: 167rpx;
+  overflow: hidden;
+  display: block;
+}
+
+.eva-time {
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 0;
+}
+
+.eva-img {
+}
+
+.eva-img image {
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+}
+
+.eva-img image:nth-child(2) {
+  margin: 0 55rpx;
+}
+
+.eva {
+  padding: 20rpx 20rpx;
+}
+
+.all-eva {
+  width: 280rpx;
+  height: 70rpx;
+  border-radius: 20rpx;
+  color: #999;
+  border: 1rpx solid #999;
+  outline: none;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.content-img {
+  width: 750rpx;
+  height: auto;
+}
+
+.content-img image {
+  width: 100%;
+  height: 1340rpx;
+}
+
+scroll-view {
+  padding: 20rpx 20rpx;
+  white-space: normal;
+}
+
+scroll-view .band {
+  font-size: 32rpx;
+  padding: 0 0 20rpx 0;
+  display: block;
+}
+
+.scroll-item {
+  padding: 0 20rpx;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 166rpx;
+  font-size: 28rpx;
+}
+
+.scroll-item image {
+  width: 166rpx;
+  height: 156rpx;
+}
+
+.scroll-item .text {
+  height: 74rpx;
+  overflow: hidden;
+  margin: 20rpx 20rpx;
+}
+
+.fixed {
+  display: flex;
+  justify-content: start;
+  position: fixed;
+  bottom: 0;
+  height: 94rpx;
+  width: 100%;
+  text-align: center;
+}
+
+button,.fixed navigator {
+  width: 50%;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background: #ecbebb;
+  color: #ba352e;
+}
+

@@ -1,0 +1,38 @@
+<!--pages/community/community.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">关注</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">发现</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">附近</view>
+</view> 
+
+<view class="search-container">
+  <image class="icon" src="images/search.png" />
+  <input value="{{q}}" bind:confirm="onConfirm" placeholder-class='in-bar' placeholder='口红' class='bar' auto-focus="true" />
+  <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" />
+</view>
+
+<view class="{{currentTab == 0 ? 'show':'hidden'}}">
+  <scroll-view>
+    <navigator class='clear'>
+      <view class='good-item'>
+        <image src='https://ww4.sinaimg.cn/bmiddle/006qNSJugy1g102l870k9j30u01404jd.jpg' class='content'></image>
+        <view class='bottom clear'>
+          <text class='title'>日子总慢的不像话 但我们也在一天天长大白衬衫黄昏木吉他 回忆少年不经事的脸颊</text>
+          <image src='https://ww3.sinaimg.cn/thumb150/005DZNc6gy1g0l8lbynd1j30ge0t6b29.jpg' class='headimg'></image>
+          <text>林口赖直树</text>
+          <v-like/>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+<view class="{{currentTab == 1 ? 'show':'hidden'}}">
+  <scroll-view>
+    <text>暂无内容2</text>
+  </scroll-view>
+</view>
+<view class="{{currentTab == 2 ? 'show':'hidden'}}">
+  <scroll-view>
+    <text>暂无内容3</text>
+  </scroll-view>
+</view>

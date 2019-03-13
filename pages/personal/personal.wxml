@@ -1,0 +1,53 @@
+<!--pages/personal/personal.wxml-->
+<view class='top'>
+  <view class='headimg clear'>
+    <image src='https://ww1.sinaimg.cn/thumb150/005DZNc6gy1g0l8l7h07jj30gw0u0e81.jpg'></image>
+  </view>
+  <view class='nickname clear'>
+    <text>林口赖直树</text>
+    <view class='vip-level clear'>
+      <image src='/images/VIP.png'></image>
+      <text>普通会员</text>
+    </view>
+  </view>
+  <navigator class='address' url='../add-list/add-list'>
+    <image src='/images/address.png'></image>
+    <text>收货地址</text>
+  </navigator>
+</view>
+<!-- 积分卡包 -->
+<view class='card-pocket'>
+  <view class='card-one'>
+    <image src='/images/card1.png'></image>
+    <text style='font-size:28rpx;'>我的钱包</text>
+  </view>
+  <view class='card-two' style='border-right:1px solid #ececec'>
+    <text style='color: orange'>0</text>
+    <view class='num'>
+      <image src='/images/card2.png'></image>
+      <text>积分</text>
+    </view>
+  </view>
+  <view class='card-three'>
+    <text style='color: orange'>0.00</text>
+    <view class='num'>
+      <image src='/images/card3.png'></image>
+      <text>余额</text>
+    </view>
+  </view>
+</view>
+<view class='band'></view>
+<view class='my-order'>
+  <text class='title'>我的订单</text>
+  <v-classify my-class="red-text" />
+</view>
+<view class='band'></view>
+
+<view class='categrorys clear' >
+  <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
+    <navigator class='categrory-list' data-name="{{item.navigationUrl}}" bindtap='navigationUrl'>
+      <image src='{{item.navigationPic}}' class='my-class'></image>
+      <text>{{item.navigationName}}</text>
+    </navigator>
+  </block>
+</view>

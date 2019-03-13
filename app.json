@@ -1,0 +1,82 @@
+{
+  "pages":[
+    "pages/Integral-mall/Integral-mall",
+    "pages/personal/personal",
+    "pages/Integral-record/Integral-record",
+    "pages/Integral-detail/Integral-detail",
+    "pages/Integral-list/Integral-list",
+    "pages/Integral-class/Integral-class",
+    "pages/citys/citys",
+    "pages/coupon-results/coupon-results",
+    "pages/coupons/coupons",
+    "pages/coupon-detail/coupon-detail",
+    "pages/secKill-detail/secKill-detail",
+    "pages/my-eva/my-eva",
+    "pages/my-order/my-order",
+    "pages/evaluate/evaluate",
+    "pages/return/return",
+    "pages/good-submit/good-submit",
+    "pages/good-detail/good-detail",
+    "pages/order-detail/order-detail",
+    "pages/good-check/good-check",
+    "pages/index/index",
+    "pages/class/class",
+    "pages/secKill/secKill",
+    "pages/add-address/add-adress",
+    "pages/add-list/add-list",
+    "pages/good-list/good-list",
+    "pages/search/search",
+    "pages/community/community",
+    "pages/mall-goodlist/mall-goodlist",
+    "pages/vote-rank/vote-rank",
+    "pages/vote-detail/vote-detail",
+    "pages/vote/vote",
+    "pages/signIn-index/signIn-index",
+    "pages/cart/cart",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ba352e",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "pink",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab.png",
+        "text": "我"
+      }
+    ]
+  }
+}

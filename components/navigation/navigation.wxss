@@ -1,0 +1,62 @@
+/* components/navigation/navigation.wxss */
+page{
+  /* display: flex;
+  flex-direction: column; */
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.navbar .item{
+  border-bottom: 1rpx solid #ececec;
+  width: 200rpx;
+  background: #f7f5f5;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx
+}
+.navbar .item.active{
+  color: #ba352e;
+  background: #fff
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #ba352e;
+}
+.right{
+  width: 550rpx
+}
+.nav_right_items{  
+  float: left;         
+  width: 33.33%;       
+  height: 120px;      
+  text-align: center;  
+}  
+
+/* 4.3. 右侧栏中的每个item的图样式设置 */  
+.nav_right_items image{  
+  width: 100%;        
+  height: 120rpx;       
+  margin-top: 15rpx;   
+}  
+.nav_right_items text{
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 24rpx
+}

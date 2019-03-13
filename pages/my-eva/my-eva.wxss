@@ -1,0 +1,45 @@
+page{
+  background: #f2f2f2
+}
+.eva-list{
+  margin: 0 0 20rpx 0;
+  background: #fff;
+}
+.header{
+  padding: 20rpx;
+}
+.header image{
+width: 80rpx;
+height: 80rpx;
+border-radius: 90rpx;
+float: left
+}
+.header text{
+  font-size: 28rpx;
+  float: left;
+  padding-left: 20rpx;
+  line-height: 76rpx
+}
+.good-inf0{
+  font-size: 28rpx;
+  display: block;
+  padding-left: 20rpx;
+  line-height: 76rpx;
+  color: #999
+}
+.good-eva{
+  font-size: 28rpx;
+  display: block;
+  padding:0 20rpx;
+  line-height: 36rpx;
+}
+.imglist{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  flex-wrap: wrap
+}
+.imglist image{
+  width: 220rpx;
+  height: 220rpx
+}

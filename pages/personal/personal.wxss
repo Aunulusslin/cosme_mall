@@ -1,0 +1,171 @@
+/* pages/personal/personal.wxss */
+
+.top {
+  background: #ba352e;
+  height: 300rpx;
+}
+
+.headimg {
+  width: 130rpx;
+  height: 130rpx;
+  border: 2px solid #fff;
+  border-radius: 90rpx;
+  float: left;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+
+.headimg image {
+  width: 100%;
+  height: 100%;
+  border-radius: 90rpx;
+}
+
+.nickname {
+  float: left;
+  margin: 42rpx 130rpx 0 10rpx;
+}
+
+.nickname text:first-child {
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.vip-level {
+  left: -30rpx;
+  position: relative;
+}
+
+.nickname text:nth-child(2) {
+  font-size: 24rpx;
+  display: inline-block;
+  width: 138rpx;
+  height: 34rpx;
+  background: #3c3642;
+  color: #fff;
+  line-height: 34rpx;
+  text-align: center;
+  border-radius: 90rpx;
+}
+
+.nickname image {
+  width: 52rpx;
+  height: 52rpx;
+  position: relative;
+  top: 14rpx;
+  left: 20rpx;
+}
+
+.address {
+  width: 230rpx;
+  height: 75rpx;
+  background: #e07973;
+  border-top-left-radius: 90rpx;
+  border-bottom-left-radius: 90rpx;
+  float: right;
+  margin-top: 50rpx;
+}
+
+.address image {
+  width: 44rpx;
+  height: 44rpx;
+  padding: 15rpx 20rpx;
+}
+
+.address text {
+  font-size: 32rpx;
+  color: #fff;
+  line-height: 75rpx;
+  position: relative;
+  bottom: 24rpx;
+}
+
+.card-pocket {
+  padding: 30rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background: #fff;
+  height: 140rpx;
+  position: relative;
+  bottom: 40rpx;
+  font-size: 32rpx;
+  color: #afafaf;
+}
+.card-pocket text{
+  padding: 8rpx 0;
+}
+
+.card-one, .card-two, .card-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-one image {
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: 0 auto;
+}
+.card-one{
+  height: 154rpx
+}
+.card-two image, .card-three image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.num {
+  position: relative;
+  right: 38rpx;
+}
+.num image{
+  position: relative;
+  top: 6rpx;
+  right:10rpx
+}
+.band{
+  height: 30rpx;
+  background: #f0eff7
+}
+.my-order{
+  height: 250rpx
+}
+.title{
+  font-size: 34rpx;
+  color: #666;
+  display: block;
+  height: 50rpx;
+  border-bottom: 1rpx solid #ececec;
+  padding: 20rpx 20rpx;
+  line-height: 50rpx
+}
+.red-text{
+  border-radius: 0rpx!important
+}
+
+
+.categrorys {
+  height: 300rpx;
+  padding: 20rpx 0;
+}
+.categrorys navigator{
+  width: 25%!important;
+  height: 130rpx;
+  float: left
+}
+.categrorys image {
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto
+}
+.categrorys text{
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  line-height: 60rpx
+}

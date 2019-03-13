@@ -1,0 +1,51 @@
+/* pages/add-list/add-list.wxss */
+
+page {
+  background: #f2f2f2;
+}
+
+.add-list {
+  padding: 20rpx 0;
+}
+
+.add-item {
+  background: #fff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  width: 88%;
+  display: flex;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+}
+
+.left {
+  width: 84%
+}
+.name{
+  margin-right: 90rpx;
+}
+.call{
+  margin-right: 30rpx;
+}
+.origin{
+  width: 70rpx;
+  height: 10rpx;
+  padding: 0rpx 10rpx;
+  border: 1px solid #ba352e;
+  color: #ba352e;
+  border-radius: 10rpx
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx;
+  border-left: 1px solid #dbd9d9
+}
+.add-address{
+  position: fixed;
+  bottom: 0;
+  border: 1px solid #ba352e;
+  color: #ba352e;
+  width: 95%;
+ margin-left: 2.5%
+}

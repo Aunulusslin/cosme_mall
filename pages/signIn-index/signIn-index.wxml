@@ -1,0 +1,92 @@
+<!--pages/signIn-index/signIn-index.wxml-->
+<view class='sign-top'>
+  <view class='title'>
+    <image src='images/exchange.png'></image>
+    <text>我的奖品</text>
+  </view>
+  <view class='sign-con clear'>
+    <image src='images/qus.png' class='qs'></image>
+    <view class='sign-day'>本期已连续签到
+      <label> 1 </label>天
+    </view>
+    <view class='categrory'>
+      <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
+        <view class='categrory-list' data-name="{{item.navigationUrl}}" bindtap='navigationUrl'>
+          <image src='{{item.navigationPic}}' class='my-class'></image>
+          <text>{{item.navigationName}}</text>
+        </view>
+      </block>
+    </view>
+    <view class='on-off'>
+      <image src='images/sign.png'></image>
+      <text>签到小管家</text>
+      <switch checked="{{switch1Checked}}" bindchange="switch1Change" color="#9a97a5" />
+    </view>
+    <text class='advertise'>每日来签到，天天领奖励 有机会赢iphonex</text>
+  </view>
+  <view class='sign-con-two' style='margin-top:40rpx;height:940rpx'>
+    <view class='title-two'>
+      <text>抽奖奖品区</text>
+      <text>今日抽奖次数：1</text>
+      <navigator>抽奖</navigator>
+    </view>
+    <scroll-view class="box" scroll-x="true">
+      <block wx:key="{{index}}" wx:for="{{goodlist}}">
+        <view class="box-item">
+          <image src='{{item.goodpic}}'></image>
+        </view>
+      </block>
+    </scroll-view>
+    <text class='task' style='padding:0 20rpx'>做任务拿大奖</text>
+    <view class='task-list clear'>
+      <image src='/images/tab2.png'></image>
+      <view class='task-info'>
+        <text>看视频领红包</text>
+        <text>0/3</text>
+        <text>还可获得视频随机红包</text>
+      </view>
+      <navigator>去完成</navigator>
+    </view>
+    <view class='task-list clear'>
+      <image src='/images/tab2.png'></image>
+      <view class='task-info'>
+        <text>看视频领红包</text>
+        <text>0/3</text>
+        <text>还可获得视频随机红包</text>
+      </view>
+      <navigator>去完成</navigator>
+    </view>
+    <view class='task-list clear'>
+      <image src='/images/tab2.png'></image>
+      <view class='task-info'>
+        <text>看视频领红包</text>
+        <text>0/3</text>
+        <text>还可获得视频随机红包</text>
+      </view>
+      <navigator>去完成</navigator>
+    </view>
+  </view>
+  <view class='sign-con-three' style='margin-top:60rpx'>
+    <image src='https://ww1.sinaimg.cn/bmiddle/a66d0169ly1g0n9erghduj21hc0u0kjo.jpg'></image>
+    <text>燕子拼团</text>
+  </view>
+  <image src='images/turn.jpg' class='slit'></image>
+
+  <!-- 推荐产品 -->
+  <scroll-view>
+    <navigator class='clear'>
+      <view class='good-item'>
+        <image src='https://wx1.sinaimg.cn/mw690/65d26b38ly1fzbwohlkf0j23h03h0u16.jpg' class='content'></image>
+        <label>97%好评</label>
+        <view class='bottom clear'>
+          <text class='main-title'>日子总慢的不像话 但我们也在一天天长大白衬衫黄昏木吉他 回忆少年不经事的脸颊</text>
+          <view class='price'>
+             <text class='price-before'>￥21.9</text>
+             <text class='price-after'>￥78</text>
+             <image src='images/cart.png'></image>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

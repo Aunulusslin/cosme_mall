@@ -1,0 +1,19 @@
+<!--pages/add-list/add-list.wxml-->
+<view class='add-list'>
+  <view class='add-item'>
+    <view class='left'>
+      <view>
+        <text class='name'>momo</text>
+        <text class='call'>16879709757</text>
+        <text class='origin'>默认</text>
+      </view>
+      <text style='margin-top: 20rpx;display:block'>厦门市思明区火车站万象城</text>
+    </view>
+    <view class='right'>
+      <text>编辑</text>
+      <text style='margin-top: 20rpx;display:block'>删除</text>
+    </view>
+  </view>
+</view>
+
+<button class='add-address' bindtap='toadd'>+新建地址</button>

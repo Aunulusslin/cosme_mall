@@ -1,0 +1,18 @@
+/* components/message/message.wxss */
+.container{
+  padding: 10rpx;
+  display: inline-flex;
+  flex-direction: row;
+}
+.container image{
+ width: 38rpx;
+ height: 28rpx
+}
+.container text{
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #666;
+  position: relative;
+  bottom: 10rpx;
+  left: 6rpx
+}

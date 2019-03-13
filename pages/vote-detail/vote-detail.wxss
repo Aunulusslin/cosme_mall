@@ -1,0 +1,43 @@
+/* pages/vote-detail/vote-detail.wxss */
+page{
+  background: #eceff4
+}
+.title {
+  text-align: center;
+  display: block;
+  padding: 20rpx 0;
+  color: #666;
+}
+.vote-detail,.vote-content {
+  width: 92%;
+  height: 300rpx;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #666;
+  box-shadow: #c0bebe 0px 0px 10px;
+}
+
+.vote-detail>view {
+  padding: 0rpx 20rpx;
+}
+
+.vote-detail image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+.vote-content>view{
+  padding: 20rpx 20rpx
+}
+.vote-content>view>text{
+  display: block
+}
+.vote-content>view>image{
+  
+}

@@ -1,0 +1,72 @@
+<!--pages/good-submit/good-submit.wxml-->
+<view class='icon'>
+  <image src='/images/add.jpg'></image>
+  <text>还没有收货地址，去添加</text>
+</view>
+<view class='slit'></view>
+<view class='con'>
+  <view class='content'>
+    <image src='https://wx4.sinaimg.cn/mw690/6ae8240agy1g0rtwz49bej20u015jnaw.jpg' class='goodimg'></image>
+    <view class='right'>
+      <view class='right-top'>
+        <text>急速免税，MD泡沫氨基酸洁面乳</text>
+        <text>￥179</text>
+      </view>
+      <view class='right-bottom'>
+        <text style='color: #999'>207ml</text>
+        <text class='number'>x1</text>
+      </view>
+    </view>
+  </view>
+  <view class='tb-1'>
+    <text class='left'>购买数量</text>
+    <view class='stepper'>
+      <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+      <input bindinput='bindManual' value='{{num}}'></input>
+      <text bindtap='bindPlus'>+</text>
+    </view>
+  </view>
+  <view class='tb-1'>
+    <text class='left'>累计满减金额</text>
+    <text class='discount'>-￥20</text>
+  </view>
+  <view class='tb-1'>
+    <text class='left'>累计满减金额</text>
+    <view class='carry'>
+      <text class='carry-price'>快递：￥0</text>
+      <text class='tip'>新用户满78包邮，已减免￥7</text>
+    </view>
+  </view>
+  <view class='tb-1 fx'>
+    <view class='lt' style='width: 570rpx;'>
+      <text>现金券</text>
+      <label>1张可用</label>
+    </view>
+    <view class='rt'>
+      <text class='use'>使用现金券</text>
+      <image src='/images/right.png'></image>
+    </view>
+  </view>
+  <view class='tb-1 fx'>
+    <view class='lt'>
+      <text>红包</text>
+      <label>1张可用</label>
+    </view>
+    <view class='rt'>
+      <text class='use'>使用红包</text>
+      <image src='/images/right.png'></image>
+    </view>
+  </view>
+  <view class='tb-1'>
+     <view class='rt sx'>
+        <text>共1件商品</text>
+        <view>合计:
+          <label>￥178</label>
+        </view>
+     </view>
+     <view class='lt cx'>
+        <text class='jm'>已减免￥45</text>
+        <navigator>提交订单</navigator>
+     </view>
+  </view>
+</view>

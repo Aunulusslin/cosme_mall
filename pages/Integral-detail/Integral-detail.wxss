@@ -1,0 +1,79 @@
+/* pages/Integral-detail/Integral-detail.wxss */
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 680rpx;
+}
+.detail-two{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  height: 292rpx;
+  border-bottom: 1px solid #f2f2f2
+}
+.detail-two > view{
+  padding: 20rpx 20rpx
+}
+.detail-two > view:first-child{
+  font-size: 32rpx;
+}
+.detail-two > view:nth-child(2){
+  color: #ba352e;
+  font-size: 32rpx;
+}
+.detail-two text{
+  font-size: 28rpx;
+  text-decoration: line-through;
+  color: #999
+}
+.fixed {
+  display: flex;
+  justify-content: start;
+  position: fixed;
+  bottom: 0;
+  height: 94rpx;
+  width: 100%;
+}
+
+.fixed image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+}
+
+.addcart {
+  width: 20%;
+  font-size: 28rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #999;
+}
+
+button {
+  width: 30%;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+button::after{ 
+border:none;
+}
+button{
+  background: #fae4e3;
+  color: #ba352e;
+}
+.caution{
+  height: 40rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.caution text{
+  padding: 15rpx 20rpx;
+  color: #ba352e
+}

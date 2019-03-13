@@ -1,0 +1,2 @@
+<!--components/time/time.wxml-->
+<view wx:if="{{flag}}" class='time-flag'>{{content}}</view>

@@ -1,0 +1,69 @@
+/* pages/evaluate/evaluate.wxss */
+.eva-con{
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ececec
+}
+.right .star {
+  float: left;
+  width: 34rpx;
+  height: 34rpx;
+  text-align: center;
+  line-height: 54rpx;
+  padding: 18rpx 20rpx;
+}
+.star image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.goodsimg{
+  width: 100rpx;
+  height: 80rpx
+}
+.right{
+  width: 370rpx
+}
+.goodo {
+  padding: 15rpx 30rpx;
+  /* height: 60rpx; */
+  line-height: 60rpx;
+}
+.photo-con {
+  border: 1px dashed #ececec;
+  padding: 20rpx 20rpx;
+}
+.goodo .tip{
+  display: block;
+  font-size: 28rpx;
+  padding: 20rpx 0
+}
+.type_down_img {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  padding: 0 22rpx;
+}
+.weui-cells_after-title{
+  width: 92%;
+  margin:0 auto;
+  border:1px solid #ddd;
+}
+.btnSf{
+  width: 92%;
+  margin-left: 4%;
+  position: fixed;
+  bottom: 0
+}
+.btnSf button{
+    background: #ba352e;
+    color: #fff;
+}
+
+.btnSf button:active{
+  background: #ba352e;
+  color: #fff;
+}

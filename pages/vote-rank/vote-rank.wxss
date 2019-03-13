@@ -1,0 +1,49 @@
+/* pages/vote-rank/vote-rank.wxss */
+
+.title {
+  text-align: center;
+  display: block;
+  padding: 20rpx 0;
+  color: #999;
+}
+
+.table {
+  border: 0px solid darkgray;
+  width: 94%;
+  margin: 0 auto;
+  padding: 30rpx 0;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+
+.td {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  color: #999;
+  font-size: 32rpx;
+}
+
+.bg-w {
+  background: pink;
+}
+
+.bg-g {
+  background: #e6f3f9;
+}
+
+.th {
+  width: 40%;
+  justify-content: center;
+  background: pinkf;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

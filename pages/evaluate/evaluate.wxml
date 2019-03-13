@@ -1,0 +1,54 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class='eva-con'>
+  <image class='goodsimg' src='https://ww1.sinaimg.cn/bmiddle/006ZpcF7ly1g0zxuh5q02j312w0qoqnh.jpg'></image>
+  <text>描述相符</text>
+  <view class="right">
+    <view bindtap="starTap" data-index="{{index}}" class="star" wx:for="{{userStars}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+  <text>{{levelword}}</text>
+</view>
+<view class='eva-con'>
+  <image class='goodsimg' src=''></image>
+  <text>物流服务</text>
+  <view class="right">
+    <view bindtap="starTap1" data-index="{{index}}" class="star" wx:for="{{userStars1}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+  <text>{{levelword1}}</text>
+</view>
+<view class='eva-con'>
+  <image class='goodsimg' src=''></image>
+  <text>服务态度</text>
+  <view class="right">
+    <view bindtap="starTap2" data-index="{{index}}" class="star" wx:for="{{userStars2}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+  <text>{{levelword2}}</text>
+</view>
+
+<view class='goodo clear' style='height:140rpx'>
+  <view class="weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" bindinput="bindTextAreaChange" placeholder="我要提出建议..." style="height: 8em" value="{{info}}" maxlength="{{noteMaxLen}}" focus />
+        <view class="weui-textarea-counter" style='font-size:28rpx;color:#999'>{{noteNowLen}}/{{noteMaxLen}}</view>
+      </view>
+    </view>
+  </view>
+  <text class='tip'>上传凭证</text>
+  <view bindtap="addUserScene" style='float:left' class='photo-con'>
+    <image class="type_down_img" src="/images/photo.png"></image>
+    <text style='font-size:28rpx'>点击上传</text>
+  </view>
+  <image src='{{imgurl}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+  <image src='{{imgurl1}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+  <image src='{{imgurl2}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+</view>
+
+<view class="btnSf">
+  <button bindtap="bindSubmit">发布</button>
+</view>

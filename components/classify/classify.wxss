@@ -1,0 +1,29 @@
+/* components/classify/classify.wxss */
+
+.categrory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  padding: 20rpx 0;
+  flex-wrap: wrap
+}
+.categrory-list{
+  width: 20%;
+  height: 130rpx;
+  padding: 0 0 20rpx 0
+}
+.categrory image {
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  border-radius: 90rpx;
+  margin: 0 auto
+}
+.categrory text{
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  line-height: 60rpx
+}

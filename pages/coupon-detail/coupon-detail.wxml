@@ -1,0 +1,30 @@
+<!--pages/coupon-detail/coupon-detail.wxml-->
+<view class='contain'>
+  <view class='top clear'>
+    <image src='https://ww3.sinaimg.cn/thumb150/006ii1Xgly1g0kp77nf1fj30on1hc7bh.jpg' class='headurl'></image>
+    <text class='store-name'>天猫官方旗舰店商品优惠券</text>
+    <text class='valid-day'>有效期：2018-12-30至2019-8-9</text>
+    <view class='value'>
+      <text>面值</text>
+      <text>140.00</text>
+      <text>订单满229.00起</text>
+    </view>
+  </view>
+  <view class='center'>
+    <text style='font-size:28rpx'>适用商品</text>
+    <image src='https://ww1.sinaimg.cn/thumb150/7afd0083gy1g0ogvz4kchj225q1mbe0s.jpg'></image>
+    <text style='font-size:24rpx' class='suol'>【兰蔻情人界限定套餐】</text>
+    <text style='font-size:24rpx;color:#ba352e;padding:10rpx 0'>￥799</text>
+    <text style='font-size:24rpx;text-decoration:line-through'>￥560</text>
+    <button>立即使用</button>
+  </view>
+  <view class='slit'></view>
+  <view class='bottom'>
+    <text style='color:#999'>使用说明</text>
+    <text class='use-intro' style='border-bottom:1rpx solid #ececec' >这里是具体的使用说明</text>
+    <text style='color:#999'>开始时间</text>
+    <text class='use-intro' style='border-bottom:1rpx solid #ececec' >这里是具体的使用时间</text>
+    <text style='color:#999'>结束时间</text>
+    <text class='use-intro'>这里是具体的使用时间</text>
+  </view>
+</view>

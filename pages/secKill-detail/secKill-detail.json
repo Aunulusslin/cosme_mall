@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-time":"/components/time/time",
+    "v-like": "/components/like/index",
+    "v-message": "/components/message/message"
+  }
+}

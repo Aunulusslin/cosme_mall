@@ -1,0 +1,38 @@
+/* pages/Integral-list/Integral-list.wxss */
+.inter-banner{
+  height: 200rpx;
+  width: 100%
+}
+.goods-list{
+min-height: 510rpx
+}
+.list-item{
+width:335rpx;
+height:510rpx;
+float:left;
+padding:20rpx 20rpx;
+}
+.goods-img{
+  width: 335rpx;
+  height: 342rpx
+}
+.jf-point{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0
+}
+.jf-point image{
+  width: 34rpx;
+  height: 42rpx
+}
+.jf-point text{
+  font-size: 32rpx;
+  color: #ba352e;
+}
+.goods-t{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 40rpx;
+  display: block;
+  overflow: hidden
+}

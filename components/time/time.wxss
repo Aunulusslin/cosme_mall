@@ -1,0 +1,8 @@
+/* components/time/time.wxss */
+.time-flag{
+  font-size: 24rpx;
+  color: #fff;
+  background: #999;
+  width: 165rpx;
+  height: 36rpx
+}

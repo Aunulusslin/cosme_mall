@@ -1,0 +1,67 @@
+/* pages/Integral-record/Integral-record.wxss */
+
+.about_page {
+  margin: 0 10px;
+}
+
+.swiper-tab {
+  width: 50%;
+  margin-left: 25%;
+  /* border-bottom: 2rpx solid #ccc; */
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.swiper-tab-item {
+  width: 30%;
+  color: #434343;
+}
+
+.active {
+  color: #ba352e;
+  border-bottom: 4rpx solid #ba352e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.juzhong {
+  margin: 0 auto;
+}
+
+.domain {
+  background-color: #fff;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.list-item {
+  border-bottom: 1px solid #f2f2f2;
+  height: 100rpx;
+  padding: 20rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list-item > text {
+  font-size: 32rpx;
+}
+.list-item > view{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}

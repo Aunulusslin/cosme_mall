@@ -1,0 +1,51 @@
+<!--components/cart/cart.wxml-->
+<view class="main">
+  <view wx:if="{{hasList}}">
+    <view class="cart-box">
+      <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+        <icon wx:if="{{item.selected}}" type="success" color="#ba352e" data-index="{{index}}" class="cart-pro-select" bindtap="selectList" />
+        <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList" />
+        <navigator url="../kj-detail/kj-detail?id={{item.id}}">
+          <image class="cart-thumb" src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
+        </navigator>
+        <text class="cart-pro-name">{{item.title}}</text>
+        <text class="cart-pro-price">￥{{item.price}}</text>
+        <!-- <label for="">活动商品</label>
+        <label for="">限购三件</label> -->
+        <text class='specifications'>207ml</text>
+        <view class="cart-count-box">
+          <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+          <text class="cart-count-num">{{item.num}}</text>
+          <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+        </view>
+        <text class="cart-del" bindtap="deleteList" data-index="{{index}}">×</text>
+        <!-- 若购物车列表为空不执行，有商品则可以执行操作并得到总价 -->
+        <view class='Discount'>
+          <label style='margin:0 20rpx'>满减</label>
+          <text>美国雅诗兰黛小棕瓶</text>
+        </view>
+      </view>
+    </view>
+
+
+    <view class='Full-reduction'>
+       <label style='margin:20rpx 10rpx'>满减</label>
+       <text>已享受新用户满39包邮</text>
+    </view>
+    <view class="cart-footer clear">
+      <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#ba352e" class="total-select" bindtap="selectAll" />
+      <icon wx:else type="circle" color="rgb(219, 90, 90)" class="total-select" bindtap="selectAll" />
+      <!-- selectallstatus即默认全选，单选框为绿色，否则为红色 -->
+      <view class="order-icon">
+        <navigator url="">
+          <button>去结算</button>
+        </navigator>
+      </view>
+      <text>全选</text>
+      <text class="cart-toatl-price">￥{{totalPrice}}</text>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="cart-no-data">购物车是空的哦~</view>
+  </view>
+</view>

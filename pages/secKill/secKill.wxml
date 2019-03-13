@@ -1,0 +1,42 @@
+<!--pages/secKill/secKill.wxml-->
+<view class="tabs-box">
+  <block wx:for="{{['07:00','08:00','09:00']}}" wx:key="item">
+    <view class="tabs-item {{currentTabsIndex == index ? 'selected' : ''}}" bindtap="onTabsItemTap" data-index="{{index}}">
+      <text>{{item}}</text>
+      <text style='font-size:22rpx'>{{tiplist[index].name}}</text>
+    </view>
+  </block> 
+</view>
+
+<view class='center'>
+  <text style='font-size:24rpx;display:inline-block;width:60%;color:pink'>秒杀中 先下单先得噢</text>
+  <view class='center-time'>
+    <text>距结束还有</text>
+    <v-time now-time="{{nowTime}}" over-time="{{overTime}}" />
+  </view>
+</view>
+
+<view class="product-detail-box">
+  <block wx:for="{{['','','']}}" wx:key="item">
+    <view class="product-detail-imgs" hidden="{{currentTabsIndex != index}}">
+      {{item}}
+      <view class='product-item'>
+        <image src='https://wx4.sinaimg.cn/mw690/007yabvCly1g0fivsi6gdj31400u0411.jpg'></image>
+        <navigator class='content'>
+          <text class='title'>三至松鼠新年大礼三至松鼠新年大礼包包三至松鼠新年大礼三至松鼠新年大礼包包</text>
+          <view class='bottom'>
+            <view class='bleft'>
+              <text class='after'>￥78</text>
+              <text class='before'>￥70</text>
+            </view>
+            <text class='progress'> 已秒56%</text>
+            <view class='bright'>
+              <button>去秒杀</button>
+              <progress percent="60" color="pink" />
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+</view>

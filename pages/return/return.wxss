@@ -1,0 +1,80 @@
+/* pages/return/return.wxss */
+
+.con {
+  padding: 0 20rpx;
+}
+
+.column {
+  height: 20rpx;
+  background: #ececec;
+}
+
+.content {
+  border-bottom: 1rpx solid #ececec;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+
+.goodimg {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-top text:first-child {
+  margin-right: 30rpx;
+}
+
+.choose-colomn {
+  padding: 0 20rpx;
+}
+
+.choose {
+  display: flex;
+  padding: 30rpx 0;
+  justify-content: start;
+  font-size: 28rpx;
+  border-bottom: 1px solid #ececec;
+}
+
+.choose .tip {
+  width: 82%;
+}
+
+.choose-con image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 5rpx;
+  left: 10rpx;
+}
+
+.type_down_img {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  padding: 0 22rpx;
+}
+
+.goodo {
+  padding: 15rpx 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.photo-con {
+  border: 1px dashed #ececec;
+  padding: 20rpx 20rpx;
+}
+.goodo .tip{
+  display: block;
+  font-size: 28rpx;
+  padding: 20rpx 0
+}

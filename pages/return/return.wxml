@@ -1,0 +1,59 @@
+<!--pages/return/return.wxml-->
+<view class='con'>
+  <view class='content'>
+    <image src='https://wx4.sinaimg.cn/mw690/6ae8240agy1g0rtwz49bej20u015jnaw.jpg' class='goodimg'></image>
+    <view class='right'>
+      <view class='right-top'>
+        <text>急速免税，MD泡沫氨基酸洁面乳</text>
+        <text>￥179</text>
+      </view>
+      <view class='right-bottom'>
+        <text style='color: #999'>商品规格：207ml</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='column'></view>
+<view class='choose-colomn'>
+  <view class='choose' wx:if="{{status==0}}">
+    <text class='tip'>货物状态</text>
+    <view class='choose-con'>
+      <text>请选择</text>
+      <image src='/images/right.png'></image>
+    </view>
+  </view>
+  <view class='choose' wx:elif="{{status==1}}">
+    <text class='tip'>退款方式</text>
+    <view class='choose-con'>
+      <text style='color:#999'>仅退款</text>
+    </view>
+  </view>
+  <view class='choose'>
+    <text class='tip'>退款原因</text>
+    <view class='choose-con'>
+      <text>请选择</text>
+      <image src='/images/right.png'></image>
+    </view>
+  </view>
+  <view class='choose'>
+    <text class='tip'>退款金额</text>
+    <view class='choose-con'>
+      <text style='color:#ba352e'>￥789</text>
+    </view>
+  </view>
+  <view class='choose'>
+    <text class='tip' style='width:160rpx;line-height:52rpx'>退款金额:</text>
+    <input placeholder='选填'></input>
+  </view>
+</view>
+<view class='column'></view>
+<view class='goodo clear' style='height:140rpx'>
+  <text class='tip'>上传凭证</text>
+  <view catchtap="addUserScene" style='float:left' class='photo-con'>
+    <image class="type_down_img" src="/images/photo.png"></image>
+    <text style='font-size:28rpx'>点击上传</text>
+  </view>
+  <image src='{{imgurl}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+  <image src='{{imgurl1}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+  <image src='{{imgurl2}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+</view>

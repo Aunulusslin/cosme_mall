@@ -1,0 +1,194 @@
+/* pages/good-submit/good-submit.wxss */
+
+.cart-count-down, .cart-count-add {
+  font-size: 44rpx;
+  width: 50rpx;
+  height: 100%;
+}
+
+.cart-count-num {
+  width: 150rpx;
+}
+
+/*主容器*/
+
+.stepper {
+  width: 80px;
+  height: 26px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  float: left;
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disable {
+  color: #ccc;
+}
+
+.icon {
+  padding: 20rpx 0;
+}
+
+.icon image {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.icon text {
+  text-align: center;
+  font-size: 32rpx;
+  display: block;
+  padding: 10rpx 0;
+}
+
+.slit {
+  height: 30rpx;
+  background: #f2f2f2;
+}
+.con{
+  padding: 20rpx 20rpx;
+}
+.content {
+  border: 1rpx solid #ececec;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  padding: 20rpx 0
+}
+
+.goodimg {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.right-top text:first-child{
+margin-right: 30rpx;
+
+}
+.number{
+  float: right;
+  color: #999
+}
+.tb-1{
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ececec
+}
+.left{
+  font-size: 28rpx;
+}
+.discount{
+  font-size: 28rpx;
+  color:#ba352e
+}
+.carry{
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.carry-price{
+  position: relative;
+  left: 226rpx;
+  line-height: 40rpx
+}
+.tip{
+  color: #999;
+  line-height: 40rpx
+}
+.tb-1 image{
+  width: 22rpx;
+  height: 22rpx;
+  position: relative;
+  left: 20rpx;
+  top: 0rpx;
+}
+.tb-1 label{
+width: 102rpx;
+color: #ba352e;
+border: 1px solid #ba352e;
+border-radius: 90rpx;
+padding: 5rpx 20rpx;
+font-size: 24rpx;
+margin: 0 20rpx
+}
+.fx{
+  justify-content: flex-start 
+}
+.use{
+  /* position: relative;
+  left: 246rpx */
+}
+.rt{
+  width: 208rpx;
+}
+.lt{
+  width: 700rpx;
+}
+.sx{
+  display: flex;
+  flex-direction: column
+}
+.sx label{
+border: none;
+padding: 0;
+margin: 0;
+font-size: 32rpx
+}
+.cx{
+  display: flex;
+  position: relative;
+  left: 200rpx
+}
+.cx navigator{
+  width: 160rpx;
+  padding: 20rpx 20rpx;
+  background: #ba352e;
+  text-align: center;
+  color: #fff;
+  border-radius: 90rpx;
+  margin: 0 14rpx
+}
+.jm{
+  font-size: 24rpx;
+  color: #ba352e;
+  line-height: 80rpx
+}

@@ -1,0 +1,250 @@
+/* pages/good-detail/good-detail.wxss */
+
+page {
+  background: #ececec;
+  padding-bottom: 100rpx
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 670rpx;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  background: #ba352e;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.after-price {
+  padding-bottom: 14rpx;
+}
+
+.info-one {
+  border-bottom: 1rpx solid #ececec;
+  padding: 20rpx 0;
+}
+
+.info-one text {
+  font-size: 28rpx;
+}
+
+.info-one label {
+  padding: 4rpx 8rpx;
+  width: 50rpx;
+  height: 30rpx;
+  background: #ba352e;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+
+.info-two {
+  display: flex;
+  height: 180rpx;
+  justify-content: start;
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 0;
+}
+
+.good-info {
+  padding: 0rpx 20rpx;
+  font-size: 28rpx;
+  background: #fff;
+}
+
+.info-two-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.left-item {
+  width: 20%;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.info-two-right image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  left: 22rpx;
+  top: 6rpx;
+}
+
+.right-item label {
+  padding: 4rpx 8rpx;
+  width: 50rpx;
+  height: 30rpx;
+  color: #ba352e;
+  border: 1px solid #ba352e;
+  font-size: 24rpx;
+}
+
+.right-item {
+  display: flex;
+  justify-content: start;
+}
+
+.right-item text {
+  padding-left: 20rpx;
+  width: 414rpx;
+}
+
+.split {
+  height: 80rpx;
+  background: #dac6c5;
+  margin-top: 14rpx;
+}
+
+.eva-num {
+  padding: 20rpx 20rpx;
+}
+
+.evaluate {
+  background: #fff;
+}
+
+.eva-num {
+  border-bottom: 1px solid #ececec;
+}
+
+.eva-num text {
+  font-size: 28rpx;
+  color: #333;
+  display: inline-block;
+}
+
+.eva-num image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.eva-detail {
+  padding: 20rpx 20rpx;
+}
+
+.eva-tag {
+  height: 240rpx;
+}
+
+.eva-tag text {
+  width: auto;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #ececec;
+  padding: 10rpx 30rpx;
+  border-radius: 90rpx;
+  float: left;
+  margin: 20rpx 20rpx;
+}
+
+.header {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.header image:first-child {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90rpx;
+}
+
+.header text {
+  font-size: 28rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #333;
+  padding: 20rpx 0;
+  height: 167rpx;
+  overflow: hidden;
+  display: block;
+}
+
+.eva-time {
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 0;
+}
+
+.eva-img {
+}
+
+.eva-img image {
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+}
+
+.eva-img image:nth-child(2) {
+  margin: 0 55rpx;
+}
+
+.dianzan {
+  padding: 20rpx 0;
+}
+
+v-like {
+  float: right;
+}
+
+v-message {
+  float: right;
+}
+
+.fixed {
+  display: flex;
+  justify-content: start;
+  position: fixed;
+  bottom: 0;
+  height: 94rpx;
+  width: 100%;
+}
+
+.fixed image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+}
+
+.addcart {
+  width: 25%;
+  font-size: 28rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #999;
+}
+
+button {
+  width: 37.5%;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+button::after{ 
+border:none;
+}
+button{
+  background: #fae4e3;
+  color: #ba352e;
+}
+.detail-img{
+  width: 100%
+}
+
+ 

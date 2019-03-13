@@ -1,0 +1,20 @@
+<!--pages/Integral-list/Integral-list.wxml-->
+<image src='http://img3.imgtn.bdimg.com/it/u=1744222301,4277451302&fm=26&gp=0.jpg' class='inter-banner'></image>
+<view class='goods-list'>
+   <view class='list-item'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </view>
+   <view class='list-item'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </view>
+</view>

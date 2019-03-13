@@ -1,0 +1,103 @@
+.tabs-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs-item {
+  height: 80rpx;
+  width: 100%;
+  color: #c7c7cb;
+  font-size: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #d0d0d7;
+}
+
+.tabs-item.selected {
+  color: rgb(233, 66, 94);
+  border-bottom: 2px solid rgb(233, 66, 94);
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ececec;
+  margin: 0rpx 20rpx
+}
+
+.product-detail-imgs image {
+  width: 250rpx;
+  height: 242rpx;
+  padding: 10rpx 0
+}
+
+.content {
+  width: 460rpx;
+  height: 242rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  height: 78rpx;
+  overflow: hidden;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 60rpx;
+}
+
+.bleft {
+  display: flex;
+  flex-direction: column;
+}
+
+.after {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: rgb(233, 66, 94);
+}
+
+.before {
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.progress {
+  font-size: 24rpx;
+  color: #999;
+  position: relative;
+  bottom: -71rpx;
+  left: 42rpx;
+}
+
+button {
+  width: 168rpx;
+  height: 64rpx;
+  background: rgb(233, 66, 94);
+  color: #fff;
+  line-height: 64rpx;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.center{
+  display: flex;
+  padding: 20rpx 20rpx;
+  line-height: 38rpx;
+  border-bottom: 1px solid #ececec
+}
+.center-time{
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+
+}

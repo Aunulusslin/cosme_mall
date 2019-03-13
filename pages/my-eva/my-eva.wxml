@@ -1,0 +1,15 @@
+<view class='eva-list'>
+  <view class='header clear'>
+    <image src='https://ww4.sinaimg.cn/thumb150/844a4803ly1g102m62c9wj21900u0dmb.jpg'></image>
+    <text>林口赖直树</text>
+  </view>
+  <text class='good-inf0'>巴黎欧莱雅小金瓶防晒200ml</text>
+  <view class='good-eva'>
+    防晒指数非常高很好 防晒指数非常高很好 防晒指数非常高很好 防晒指数非常高很好 防晒指数非常高很好 防晒指数非常高很好 防晒指数非常高很好
+  </view>
+  <view class='imglist'>
+    <image src='https://ww4.sinaimg.cn/thumb150/844a4803ly1g102m62c9wj21900u0dmb.jpg'></image>
+    <image src='https://ww4.sinaimg.cn/thumb150/844a4803ly1g102m62c9wj21900u0dmb.jpg'></image>
+    <image src='https://ww4.sinaimg.cn/thumb150/844a4803ly1g102m62c9wj21900u0dmb.jpg'></image>
+  </view>
+</view>

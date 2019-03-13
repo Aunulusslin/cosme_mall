@@ -1,0 +1,21 @@
+<!--pages/Integral-record/Integral-record.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">收入</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">支出</view>
+</view>
+<view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
+    <scroll-view>
+      <view class='list-item'>
+        <text>商城签到</text>
+        <view>
+          <text style='color:#ba352e'>商城签到</text>
+          <label style='color:#999'>签到送积分  时间  2019-02-17</label>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+    <scroll-view>
+      <text>暂无内容2</text>
+    </scroll-view>
+  </view>

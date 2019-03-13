@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class='top'>
+  <view class="search-container">
+    <image class="icon" src="images/search.png" />
+    <input value="{{q}}" bind:confirm="onConfirm" placeholder-class='in-bar' placeholder='口红' class='bar' auto-focus="true" />
+    <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" />
+  </view>
+  <text style='line-height:117rpx;font-size:28rpx;color:#999'>取消</text>
+</view>
+<text class='tip'>热门搜索</text>
+<view class='tip-item'>
+  <block  wx:for="{{['口红','洗面奶','日霜','晚霜']}}" wx:key="item">
+    <navigator url='../good-list/good-list'>{{[item]}}</navigator>
+  </block>
+</view>

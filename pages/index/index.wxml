@@ -1,0 +1,26 @@
+<v-search/>
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="180" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='banner'>
+  <image src='https://wx3.sinaimg.cn/large/6ae8240agy1g0ncgz3tb3j20fk07840p.jpg'></image>
+</view> 
+<!-- 专题 -->
+<view class='categrory'>
+  <block wx:for="{{seminarlist}}" wx:key="{{index}}" wx:for-item="item">
+     <navigator class='seminar-list' data-name="{{item.seminarUrl}}" bindtap='navigationUrl'>
+      <image src='{{item.seminarPic}}'></image>
+    </navigator>
+  </block>
+</view>
+
+<!-- 产品分类 -->
+<v-classify/>
+ 
+<!-- 产品专题 -->
+<v-floor/>

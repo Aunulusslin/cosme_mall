@@ -1,0 +1,67 @@
+<!--pages/vote/vote.wxml-->
+<view class='banner'>
+  <image src='images/vote.png'></image>
+  <text>报名活动</text>
+</view>
+<text class='title'>xxxxxxx摄影评选大赛</text>
+<view class='votenum'>
+   <view>
+      <text>42</text>
+      <text class='text'>参与选手</text>
+   </view>
+   <view>
+      <text>42</text>
+      <text class='text'>累计票数</text>
+   </view>
+   <view>
+      <text>42</text>
+      <text class='text'>访问次数</text>
+   </view>
+</view>
+<view class='vote-detail'>
+   <view>
+     <image src='images/timestart.png'></image>
+     <text>活动开始：2018-12-31 12：00</text>
+   </view>
+   <view>
+     <image src='images/timestart.png'></image>
+     <text>结束时间：2018-12-31 12：00</text>
+   </view>
+   <view>
+     <image src='images/jg.png'></image>
+     <text style='line-height:46rpx;'>活动规则：赖冠霖赖冠霖赖冠霖赖冠霖赖冠霖赖冠霖</text>
+   </view>
+   <view style='padding:0 0 20rpx 20rpx' bindtap='navigate'>
+     <image src='images/pack.png'></image>
+     <text>活动详情：展开</text>
+     <image src='images/right.png'></image>
+   </view>
+</view>
+
+<view class='search'>
+  <input bindinput="bindKeyInput" placeholder="输入参赛选手编号或姓名" />
+  <view class='icon'>
+     <image src='images/search.png'></image>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='list-item'>
+     <view class='vote-img'>
+        <image src='https://wx2.sinaimg.cn/orj360/0073lKWWly1g0qspr5uw7j30u00u0n1v.jpg'></image>
+        <text>1</text>
+     </view>
+     <text>赖冠霖</text>
+     <button>投票</button>
+     <text>7678981票</text>
+  </view>
+  <view class='list-item'>
+     <view class='vote-img'>
+        <image src='https://wx2.sinaimg.cn/orj360/0073lKWWly1g0qspr5uw7j30u00u0n1v.jpg'></image>
+        <text>1</text>
+     </view>
+     <text>赖冠霖</text>
+     <button>投票</button>
+     <text>67889781票</text>
+  </view>
+</view>

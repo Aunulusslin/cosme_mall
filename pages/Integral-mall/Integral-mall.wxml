@@ -1,0 +1,91 @@
+<!--pages/Integral-mall/Integral-mall.wxml-->
+<v-search/>
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="180" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='categrory'>
+  <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
+    <navigator class='categrory-list' data-name="/pages/good-detail/good-detail" bindtap='navigationUrl' url='{{item.navigationUrl}}'>
+      <image src='{{item.navigationPic}}' class='my-class'></image>
+      <text>{{item.navigationName}}</text>
+    </navigator>
+  </block>
+</view>
+<!-- 弹幕 -->
+<swiper  autoplay="true" interval="5000" duration="1000" vertical="true" class='dm'>
+  <block wx:for="{{newlist}}">
+    <swiper-item>
+      <image src="{{item.header}}" class="slide-image" width="100%" height="180" />
+      <view class='right'>
+        <text class='tips'>积分中奖</text>
+        <text style='position: relative;top: 25rpx;'>{{item.word}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<image src='http://img3.imgtn.bdimg.com/it/u=1744222301,4277451302&fm=26&gp=0.jpg' class='inter-banner'></image>
+<!-- 商品列表 -->
+<view class='title'>
+  <view>99特惠</view>
+  <navigator class='right-nav' url='../Integral-list/Integral-list'>
+     <text>更多推荐</text>
+     <image src='/images/right.png'></image>
+  </navigator>
+</view>
+<view class='goods-list'>
+   <navigator class='list-item'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </navigator>
+   <navigator class='list-item'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </navigator>
+</view>
+<view class='column'></view>
+<!-- 商品列表2 -->
+<view class='title' style='margin-top:40rpx'>
+  <view>人气推荐</view>
+  <navigator class='right-nav'>
+     <text>更多推荐</text>
+     <image src='/images/right.png'></image>
+  </navigator>
+</view>
+<view class='goods-list'>
+   <navigator class='list-item three' url='../Integral-detail/Integral-detail'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img threeimg'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </navigator>
+   <navigator class='list-item three'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img threeimg'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </navigator>
+   <navigator class='list-item three'>
+     <image src='https://ww3.sinaimg.cn/bmiddle/006DIoPqly1g10z40mcqrj32c02c0e82.jpg' class='goods-img threeimg'></image>
+     <view class='jf-point'> 
+      <image src='/images/jf.png'></image>
+      <text>积分6778分</text>
+     </view>
+     <text class='goods-t'>雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华雅诗兰黛鱼子精华</text>
+   </navigator>
+</view>

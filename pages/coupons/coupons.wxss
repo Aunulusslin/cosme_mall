@@ -1,0 +1,126 @@
+/* pages/coupons/coupons.wxss */
+
+.banner {
+  width: 100%;
+  height: 300rpx;
+}
+
+.coupon-pocket {
+  padding: 20rpx 0;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: rgb(248, 197, 205) 0px 0px 10px;
+  position: relative;
+  bottom: 86rpx;
+}
+
+.coupon-pocket image {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+
+.coupon-pocket button {
+  color: #fff;
+  border-radius: 90rpx;
+  width: 60%;
+  background:#ba352e;
+  font-size: 32rpx;
+}
+
+.coupon-list navigator {
+  width: 96%;
+  height: 200rpx;
+  border-radius: 20rpx;
+  border: 1px solid #ececec;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: 24%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.brand {
+  padding: 20rpx 10rpx;
+}
+
+.brand-name {
+  font-size: 32rpx;
+  color: #333;
+  display: block;
+  padding-bottom: 73rpx;
+}
+
+.use-status {
+  width: 28%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.brand text:nth-child(2) {
+  font-size: 36rpx;
+  color: #999;
+}
+
+.brand text:nth-child(3) {
+  font-size: 24rpx;
+  color: #999;
+  padding-left: 20rpx;
+}
+
+.gift-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gift {
+  margin: 20rpx 0;
+  width: 300rpx;
+  height: 160rpx;
+  position: relative;
+  background: url("http://xcx.carbase.vip/file/upload/20190312165941807891.jpg") no-repeat;
+  background-size:300rpx 160rpx;
+}
+
+.gift text:first-child {
+  font-size: 36rpx;
+  color: #fff;
+  padding-left: 30rpx;
+}
+
+.gift text:nth-child(2) {
+  font-size: 56rpx;
+  color: #fff;
+}
+
+.gift text:nth-child(3) {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+  padding-left: 30rpx;
+  padding-top: 40rpx
+}
+
+.gift label {
+  width: 50rpx;
+  height: 50rpx;
+  background: #ba352e;
+  border-radius: 90rpx;
+  position: relative;
+  bottom: 165rpx;
+  font-size: 24rpx;
+  color: #fff;
+  display: block;
+  line-height: 50rpx;
+  text-align: center;
+  left: 275rpx;
+}

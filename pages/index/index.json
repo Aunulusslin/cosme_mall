@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-search":"/components/search/index",
+    "v-classify":"/components/classify/classify",
+    "v-floor":"/components/floor/floor"
+  }
+}

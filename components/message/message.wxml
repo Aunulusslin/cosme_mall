@@ -1,0 +1,5 @@
+<!--components/message/message.wxml-->
+<view class='container' bindtap='onLike'>
+  <image src='{{yesSrc}}'></image>
+  <text>{{count}}</text>
+</view>

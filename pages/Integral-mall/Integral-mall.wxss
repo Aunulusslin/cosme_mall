@@ -1,0 +1,139 @@
+/* pages/Integral-mall/Integral-mall.wxss */
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+.categrory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 20rpx 0;
+}
+
+.categrory-list {
+  width: 25%;
+  height: 130rpx;
+  padding: 0 0 20rpx 0;
+}
+
+.categrory image {
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  border-radius: 90rpx;
+  margin: 0 auto;
+}
+
+.categrory text {
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.dm {
+  height: 150rpx;
+  background: #f3f3f3
+}
+
+.dm image {
+  margin: 15rpx 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 90rpx;
+  float: left;
+}
+
+.right {
+  float: left;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips {
+  font-weight: bold;
+  font-size: 36rpx;
+  color: rgb(236, 147, 44);
+  position: relative;
+  top: 20rpx;
+}
+.title{
+  display: flex;
+  justify-content: start;
+  font-size: 32rpx;
+  border-bottom: 1px solid #f3f3f3
+}
+.title > view{
+  width:66%;
+  padding: 20rpx
+}
+.title navigator{
+  padding: 20rpx
+}
+.title image{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 5rpx;
+  left: 10rpx
+}
+.goods-list{
+min-height: 510rpx
+}
+.list-item{
+width:335rpx;
+height:510rpx;
+float:left;
+padding:20rpx 20rpx;
+}
+.goods-img{
+  width: 335rpx;
+  height: 342rpx
+}
+.jf-point{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0
+}
+.jf-point image{
+  width: 34rpx;
+  height: 42rpx
+}
+.jf-point text{
+  font-size: 32rpx;
+  color: #ba352e;
+}
+.goods-t{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 40rpx;
+  display: block;
+  overflow: hidden
+}
+.three{
+width:210rpx;
+height:364rpx;
+}
+.threeimg{
+  width: 210rpx;
+  height: 204rpx
+}
+.inter-banner{
+  height: 200rpx;
+  width: 100%
+}
+.column{
+  height: 30rpx;
+  background: #f3f3f3;
+  margin-top: 40rpx
+}

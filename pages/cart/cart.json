@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-cart":"/components/cart/cart"
+  }
+}

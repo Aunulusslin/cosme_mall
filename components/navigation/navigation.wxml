@@ -1,0 +1,33 @@
+<!--components/navigation/navigation.wxml-->
+<view class='container'>
+  <!--导航条-->
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+
+  <!--首页-->
+  <view hidden="{{currentTab!==0}}" class='right'>
+    <view class="nav_right_items">
+      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
+      <text>小棕瓶</text>
+    </view>
+    <view class="nav_right_items">
+      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
+      <text>小棕瓶</text>
+    </view>
+    <view class="nav_right_items">
+      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
+      <text>小棕瓶</text>
+    </view>
+  </view>
+
+  <!--搜索-->
+  <view hidden="{{currentTab!==1}}" class='right'>
+    tab_02
+  </view>
+
+  <!--我-->
+  <view hidden="{{currentTab!==2}}" class='right'>
+    tab_03
+  </view>
+</view>

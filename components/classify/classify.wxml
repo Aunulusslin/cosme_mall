@@ -1,0 +1,9 @@
+<!--components/classify/classify.wxml-->
+<view class='categrory'>
+  <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
+    <navigator class='categrory-list' data-name="/pages/good-detail/good-detail" bindtap='navigationUrl' url='{{item.navigationUrl}}'>
+      <image src='{{item.navigationPic}}' class='my-class'></image>
+      <text>{{item.navigationName}}</text>
+    </navigator>
+  </block>
+</view>
