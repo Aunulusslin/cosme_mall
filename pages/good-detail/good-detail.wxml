@@ -2,14 +2,14 @@
 <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="100%" height="180" />
+      <image src="{{domainB}}{{item}}" class="slide-image" width="100%" height="180" />
     </swiper-item>
   </block> 
 </swiper>
 <view class='price'>
-  <text class='after-price'>￥169</text>
+  <text class='after-price'>￥{{goodsPrice}}</text>
   <view class='buy-num'>
-    <text>2006人已购买</text>
+    <text>{{goodsSaleNum}}人已购买</text>
     <text style='padding-left:20rpx'>满减后最低￥156</text>
   </view>
 </view>
@@ -17,9 +17,9 @@
   <view class='info-one'>
     <label>海外自营</label>
     <label style='margin:0 10rpx'>包税</label>
-    <text>Elta MD泡沫氨基酸洁面乳207ml,让你析出幸福感</text>
+    <text>{{goodsName}}  {{goodsDescription}}</text>
   </view>
-  <view class='info-two'>
+  <!-- <view class='info-two'>
     <text class='left-item'>促销</text>
     <view class='info-two-right'>
       <view class='right-item'>
@@ -36,12 +36,12 @@
         <text>Elta MD泡沫氨基酸洁面乳207ml</text>
       </view>
     </view>
-  </view>
-  <view class='info-two' style='height:36rpx'>
+  </view> -->
+  <!-- <view class='info-two' style='height:36rpx'>
     <text class='left-item'>运费</text>
     <view class='info-two-right'>
       <view class='right-item'>
-        <text style='width:476rpx'>本商品单肩包邮</text>
+        <text style='width:476rpx'>本商品单件包邮</text>
         <image src='/images/right.png'></image>
       </view>
     </view>
@@ -54,7 +54,7 @@
         <image src='/images/right.png'></image>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>
 <view class='split'></view>
 <view class='evaluate'>
@@ -98,7 +98,7 @@
 </view>
 <!-- 详情 -->
 <view class='detail-img'>
-  <image src='https://ww1.sinaimg.cn/bmiddle/005OYf4qly1fns7p31jdsj30ov0owq63.jpg'></image>
+  <rich-text nodes="{{goodsContent}}"></rich-text>
 </view>
 
 <view class='fixed'>

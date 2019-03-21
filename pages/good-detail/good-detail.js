@@ -1,15 +1,13 @@
 // pages/good-detail/good-detail.js
+var a = getApp();
+var globalData = a.globalData;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551331332346&di=7723e0cd8754ffa77fcb3cc5ba72b65f&imgtype=0&src=http%3A%2F%2Fimage.cnpp.cn%2Fupload%2Fimages%2F20141224%2F16461373067_1919x1080.jpg',
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551331332346&di=7723e0cd8754ffa77fcb3cc5ba72b65f&imgtype=0&src=http%3A%2F%2Fimage.cnpp.cn%2Fupload%2Fimages%2F20141224%2F16461373067_1919x1080.jpg',
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551331332346&di=7723e0cd8754ffa77fcb3cc5ba72b65f&imgtype=0&src=http%3A%2F%2Fimage.cnpp.cn%2Fupload%2Fimages%2F20141224%2F16461373067_1919x1080.jpg'
-    ],
+    domainB: globalData.domainNameB,
   },
   tocheck: function() {
     wx.navigateTo({
@@ -20,7 +18,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var that=this
+    console.log(options)
+    let goodsId = options.goodsId
+    console.log("goodsId:" + goodsId)
+    this.setData({
+      goodsId: goodsId
+    })
+    let detailUrl = globalData.domainNameA + globalData.classB+goodsId
+    let imgurl = globalData.domainNameA + 'goodsDetail/' + goodsId
+    a.appRequest('get', detailUrl, {}, (res) => {
+      let data = res.data
+      var words = res.data.goodsMorePic     //字符串中间已特殊符号隔开
+      var words = words.split(",")
+      that.setData({
+        imgUrls: words,
+        goodsName: data.goodsName,
+        goodsDescription: data.goodsDescription,
+        goodsPrice: data.goodsPrice,
+        goodsSaleNum: data.goodsSaleNum
+      })
+    }, (err) => {
+      console.log('请求错误信息：' + err.errMsg)
+    })
+    //富文本
+    a.appRequest('get', imgurl, {}, (res) => {
+      let data = res.data
+      that.setData({
+        goodsContent: data.goodsContent.replace(/\<img/gi, '<img style="max-width:100%;height:auto"')
+      })
+    }, (err) => {
+      console.log('请求错误信息：' + err.errMsg)
+    })
   },
 
   /**

@@ -1,44 +1,25 @@
 <!--components/floor/floor.wxml-->
 <view class='container'>
   <view class='banner'>
-    <image src='https://wx2.sinaimg.cn/large/6ae8240agy1fyyzynj01wj20fk078ac3.jpg'></image>
+    <image src='{{floorPic}}'></image>
   </view>
   <view class='goods-list'>
-    <block>
-      <navigator class='clear' url='/pages/good-detail/good-detail' >
-        <image class='good-img' src='https://wx4.sinaimg.cn/mw690/889de2c7ly1fz1s22di3ej20u012uhdu.jpg'></image>
+      <navigator class='clear' url='/pages/good-detail/good-detail?goodsId={{item.goodsId}}' wx:for="{{goodsList}}" wx:key="{{index}}" wx:for-item="item" >
+        <image class='good-img' src='{{item.goodsPic}}'></image>
         <view class='good-info'>
-          <text class='title'>elta md泡沫氨基酸洁面乳207ml,让你洗出幸福感！</text>
+          <text class='title'>{{item.goodsName}}</text>
           <view class='tag'>
             <label>减</label>
             <text>满179减68元</text>
           </view>
           <view class='bottom clear'>
             <view class='left'>
-              <text class='price'>￥157</text>
+              <text class='price'>￥{{item.goodsPrice}}</text>
               <text class='evaluate'>6.3万条评论</text>
             </view>
             <image src='images/chart.png'></image>
           </view>
         </view>
       </navigator>
-      <navigator class='clear' >
-        <image class='good-img' src='https://wx4.sinaimg.cn/mw690/889de2c7ly1fz1s22di3ej20u012uhdu.jpg'></image>
-        <view class='good-info'>
-          <text class='title'>elta md泡沫氨基酸洁面乳207ml,让你洗出幸福感！让你洗出幸福感！让你洗出幸福感！</text>
-          <view class='tag'>
-            <label>减</label>
-            <text>满179减68元</text>
-          </view>
-          <view class='bottom clear'>
-            <view class='left'>
-              <text class='price'>￥157</text>
-              <text class='evaluate'>6.3万条评论</text>
-            </view>
-            <image src='images/chart.png'></image>
-          </view>
-        </view>
-      </navigator>
-    </block>
   </view>
 </view>

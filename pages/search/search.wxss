@@ -39,15 +39,17 @@
 .tip{
   padding: 30rpx 30rpx;
   color: #666;
-  font-size: 28rpx
+  font-size: 28rpx;
+  display: block;
 }
 .tip-item{
-  height: 100rpx;
+  height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   padding: 20rpx 20rpx
 }
 .tip-item navigator{
+  margin:0 20rpx;
   width:154rpx;
   height: 54rpx;
   background: #f6f6f6;
@@ -55,4 +57,10 @@
   font-size: 28rpx;
   line-height: 54rpx;
   text-align: center
+}
+.delete{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin: 0 30rpx
 }

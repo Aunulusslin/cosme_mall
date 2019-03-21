@@ -1,13 +1,13 @@
 <!--pages/personal/personal.wxml-->
 <view class='top'>
   <view class='headimg clear'>
-    <image src='https://ww1.sinaimg.cn/thumb150/005DZNc6gy1g0l8l7h07jj30gw0u0e81.jpg'></image>
+    <image src='{{memberHeadimgurl}}'></image>
   </view>
   <view class='nickname clear'>
-    <text>林口赖直树</text>
+    <text>{{memberNickname}}</text>
     <view class='vip-level clear'>
-      <image src='/images/VIP.png'></image>
-      <text>普通会员</text>
+      <image src='{{memberTagImg}}'></image>
+      <text>{{memberTagName}}</text>
     </view>
   </view>
   <navigator class='address' url='../add-list/add-list'>
@@ -50,4 +50,15 @@
       <text>{{item.navigationName}}</text>
     </navigator>
   </block>
+</view>
+
+
+<!-- tabbar -->
+<view style='position:fixed;width:100%;height:200rpx'>
+  <import src="../../template/nav" />
+  <view class="flex fix_nav_wp">
+    <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}" />
+    </block>
+  </view>
 </view>

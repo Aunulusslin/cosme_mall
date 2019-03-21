@@ -1,33 +1,28 @@
-<!--components/navigation/navigation.wxml-->
-<view class='container'>
-  <!--导航条-->
-  <view class="navbar">
-    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+<!--主盒子-->
+<view class="container">
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{cateItems}}" wx:key="id">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav == item.goodsClassId ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.goodsClassId}}">{{item.goodsClassName}}</view>
+    </block>
   </view>
-
-  <!--首页-->
-  <view hidden="{{currentTab!==0}}" class='right'>
-    <view class="nav_right_items">
-      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
-      <text>小棕瓶</text>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{cateItems[curIndex].goodsClassTwoDTOState}}">
+      <block wx:for="{{cateItems[curIndex].goodsClassTwoDTOList}}" wx:key="id">
+        <view class="nav_right_items">
+        <!--界面跳转 -->
+          <navigator url="/pages/good-list/good-list?goodsClassId={{item.goodsClassId}}">
+            <image src="{{imgurl}}{{item.goodsClassPic}}"></image>
+            <text>{{item.goodsClassName}}</text>
+          </navigator>
+        </view> 
+      </block>
     </view>
-    <view class="nav_right_items">
-      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
-      <text>小棕瓶</text>
-    </view>
-    <view class="nav_right_items">
-      <image src="http://img3.imgtn.bdimg.com/it/u=974911330,858416609&fm=26&gp=0.jpg"></image>
-      <text>小棕瓶</text>
-    </view>
-  </view>
-
-  <!--搜索-->
-  <view hidden="{{currentTab!==1}}" class='right'>
-    tab_02
-  </view>
-
-  <!--我-->
-  <view hidden="{{currentTab!==2}}" class='right'>
-    tab_03
+    <!--如果无数据，则显示数据-->
+    <view class="nodata_text" wx:else>该分类暂无数据</view>
   </view>
 </view>

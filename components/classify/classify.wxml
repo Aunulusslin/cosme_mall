@@ -5,5 +5,5 @@
       <image src='{{item.navigationPic}}' class='my-class'></image>
       <text>{{item.navigationName}}</text>
     </navigator>
-  </block>
+  </block> 
 </view>

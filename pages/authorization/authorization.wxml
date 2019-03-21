@@ -1,0 +1,18 @@
+<view class='contain'>  
+  <view class='content'>
+    <view class='content-placeholder'></view>
+    <view class='content-top'>
+      <view class='content-photo'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <open-data type="userNickName" class="span"></open-data>
+      </view>
+    </view>
+    <view class='content-placeholder'></view>
+
+    <view class='box-btn-area' style='padding:50rpx;'>
+        <button class="box-btn" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style='background-color:#ba352e'>登陆</button>
+    </view>
+  </view>
+</view>

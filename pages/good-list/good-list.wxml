@@ -1,2 +1,25 @@
 <!--pages/good-list/good-list.wxml-->
-<v-floor/>
+<view class='sort-wrap'>
+  <view class='sort-btn' data-index="{{daindex1}}" bindtap="choosesort1">
+    销量
+    <image src="{{imageurl1}}"></image>
+  </view>
+  <view class='sort-btn' data-index="{{daindex2}}" bindtap="choosesort2">
+    价格
+    <image src="{{imageurl2}}"></image>
+  </view>
+</view>
+
+
+
+<view class="main">
+    <view class="list-box">
+        <view class="newest-list"  wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+            <navigator url="../details/details">
+                <image src="{{img}}{{item.goodsPic}}"></image>
+                <view class="newest-text"><text style='max-height:41rpx;overflow:hidden;display:block;text-overflow:ellipsis;white-space: nowrap;'>{{item.goodsName}}</text></view>
+                <view class="newest-text"><text style='font-weight:bold'>￥ {{item.goodsPrice}}</text></view>
+            </navigator>
+        </view>
+    </view>
+</view>

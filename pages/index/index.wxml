@@ -2,25 +2,66 @@
 <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="100%" height="180" />
+      <image src="{{item.advPic}}" class="slide-image" width="100%" height="180" />
     </swiper-item>
   </block>
 </swiper>
-
-<view class='banner'>
-  <image src='https://wx3.sinaimg.cn/large/6ae8240agy1g0ncgz3tb3j20fk07840p.jpg'></image>
-</view> 
 <!-- 专题 -->
+<view class='banner'>
+  <image src='{{subjectPic}}'></image>
+</view> 
+<!-- 橱窗 -->
 <view class='categrory'>
   <block wx:for="{{seminarlist}}" wx:key="{{index}}" wx:for-item="item">
-     <navigator class='seminar-list' data-name="{{item.seminarUrl}}" bindtap='navigationUrl'>
-      <image src='{{item.seminarPic}}'></image>
+     <navigator class='seminar-list' data-name="{{item.seminarUrl}}" bindtap='navigationUrl' style='width:25%;padding:0 0 20rpx 0'>
+      <image src='{{item.showcasePic}}'></image>
     </navigator>
   </block>
 </view>
 
-<!-- 产品分类 -->
-<v-classify/>
+<!-- 产品导航 -->
+<v-classify navigationList="{{navigationList}}"/>
+  
+<!-- 产品楼层 -->
+<v-floor floorPic="{{item.floorPic}}" goodsList="{{item.goodsList}}" wx:for="{{floorList}}" wx:key="{{index}}" wx:for-item="item"/>
+
+
+
+<!-- tabbar -->
+<view style='position:fixed;width:100%;height:200rpx'>
+  <import src="/template/nav" />
+  <view class="flex fix_nav_wp">
+    <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}" />
+    </block>
+  </view>
+</view>
+
+<!-- 遮罩 -->
+<view>
+<view class="zhezao" hidden="{{flag}}">
+  <view class="t_w">
  
-<!-- 产品专题 -->
-<v-floor/>
+    <!--右上角图标开始-->
+    <view class="t_image"  bindtap="conceal">
+      <image class="t_image1" src="/images/cross.png" ></image>
+    </view>
+    <!--右上角图标结束-->
+ 
+    <!--弹出框开始-->
+    <view class="tanchu_view" style='background: url("{{bouncedImg}}") no-repeat;background-size: 100% 800rpx;'>
+      <view>
+         <!--确定开始-->
+        <view class="txtsure"  >
+          <view class="txtsurebg" bindtap="conceal">
+              <text class="txtsurename"></text>
+          </view>        
+        </view>
+         <!--确定结束-->
+       </view>
+    </view>
+    <!--弹出框结束-->
+  </view>
+</view>
+</view>
+ 

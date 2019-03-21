@@ -1,2 +1,12 @@
 <!--pages/cart/cart.wxml-->
 <v-cart/>
+
+<!-- tabbar -->
+<!-- <view style='position:fixed;width:100%;height:200rpx'>
+  <import src="../../template/nav" />
+  <view class="flex fix_nav_wp">
+    <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}" />
+    </block>
+  </view>
+</view> -->

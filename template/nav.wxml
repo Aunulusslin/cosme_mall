@@ -1,0 +1,32 @@
+<template name="nav">
+      <view class="nav_link" bindtap="{{fn}}">
+        <button class="defalut_btn {{current==0?'':'on_cor'}}">
+          <block wx:if="{{style===0 && current==1}}">
+              <navigator class='content-navigator' url="{{url}}" style='display:block;flex-direction:column;width:154rpx;height:140rpx;'hover-class="none">
+                <image src='{{curUrl}}' data-id="0" style='height:56rpx;width:56rpx;line-height:80rpx;display:block;margin:auto;margin-top:8rpx' />
+                <text class="txt" style='margin-top:30rpx;text-align:center'>{{name}}</text>
+              </navigator>
+          </block>
+          <block wx:if="{{style===3 && current==0}}">
+              <navigator class='content-navigator' url="{{url}}" style='display:block;flex-direction:column;width:154rpx;height:140rpx;'hover-class="none">
+                <image src='{{imgUrl}}' data-id="0" style='height:56rpx;width:56rpx;line-height:80rpx;display:block;margin:auto;margin-top:8rpx' />
+                <text class="txt" style='margin-top:30rpx;text-align:center;margin-left:14rpx'>{{name}}</text>
+              </navigator>
+          </block>
+          <block wx:if="{{style===0 && current==0}}">
+            <navigator class='content-navigator' url="{{url}}"  style='flex-direction:column;width:154rpx;height:140rpx' hover-class="none"> 
+                <image src='{{imgUrl}}' data-id="0" style='height:56rpx;width:56rpx;line-height:80rpx;display:block;margin:auto;margin-top:8rpx ' />
+                <text class="txt"  style='margin-top:30rpx;text-align:center'>{{name}}</text>
+            </navigator>
+          </block>
+          <block wx:if="{{style==1}}">
+            <navigator url='{{adurl}}' hover-class="none">
+                <view class="plus_wp">
+                  <image src='/images/community1.png' class="plus_ico" />
+                </view>
+                <text class="txt">{{name}}</text>
+            </navigator>
+          </block>
+        </button> 
+      </view>
+</template>

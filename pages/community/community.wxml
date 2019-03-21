@@ -36,3 +36,13 @@
     <text>暂无内容3</text>
   </scroll-view>
 </view>
+
+<!-- tabbar -->
+<view style='position:fixed;width:100%;height:200rpx'>
+  <import src="../../template/nav" />
+  <view class="flex fix_nav_wp">
+    <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}" />
+    </block>
+  </view>
+</view>

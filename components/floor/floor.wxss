@@ -29,17 +29,17 @@
 .good-info {
   float: left;
   width: 450rpx;
-  padding: 0rpx 10rpx;
+  padding: 16rpx 10rpx;
 }
 
 .good-info image {
   width: 65rpx;
-  height: 65rpx;
+  height: 78rpx;
   float: right;
 }
 
 .title {
-  font-size: 32rpx;
+  font-size: 28rpx;
   display: block;
   height: 80rpx;
   overflow: hidden;

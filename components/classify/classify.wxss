@@ -1,11 +1,10 @@
 /* components/classify/classify.wxss */
-
 .categrory {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   height: auto;
-  padding: 20rpx 0;
+  padding: 20rpx 25rpx;
   flex-wrap: wrap
 }
 .categrory-list{
