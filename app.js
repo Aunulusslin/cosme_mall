@@ -62,7 +62,7 @@ App({
     userInfo: null,
     sessionkey: null,
     domainNameA: 'http://api.xmsmoo.cn/', //请求域名A
-    domainNameB: 'http://xcx.carbase.vip/file/upload/', //请求域名B(存放图片)
+    domainNameB: 'http://img.xmsmoo.cn/upload/', //请求域名B(存放图片)
     bounce: "bounced",
     siteA: 'adv/',
     siteB: 'navigation/list/0',

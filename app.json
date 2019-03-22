@@ -1,12 +1,13 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/good-list-child/good-list",
+    "pages/personal/personal",
+    "pages/search/search",
     "pages/class/class",
     "pages/good-list/good-list",
-    "pages/index/index",
-    "pages/personal/personal",
     "pages/authorization/authorization",
     "pages/my-order/my-order",
-    "pages/search/search",
     "pages/Integral-mall/Integral-mall",
     "pages/Integral-record/Integral-record",
     "pages/Integral-detail/Integral-detail",
