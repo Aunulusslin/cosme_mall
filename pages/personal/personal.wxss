@@ -169,3 +169,25 @@
   text-align: center;
   line-height: 60rpx
 }
+
+
+.state{
+    width:100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    position:absolute
+}
+.stateItem{
+    padding:5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family:iconfont;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+
+}
+.stateItem:before{
+    font-size: 28px;
+}

@@ -39,11 +39,28 @@
 <view class='band'></view>
 <view class='my-order'>
   <text class='title'>我的订单</text>
-  <v-classify my-class="red-text" />
+  <!-- <v-classify my-class="red-text" /> -->
+  <view class="flex state">
+    <navigator class="stateItem icon-pay" url='/pages/my-order/my-order'>
+      <text>待付款</text>
+    </navigator>
+    <navigator class="stateItem icon-deliver" url='/pages/my-order/my-order'>
+      <text>待发货</text>
+    </navigator>
+    <navigator class="stateItem icon-send" url='/pages/my-order/my-order'>
+      <text>待签收</text>
+    </navigator>
+    <navigator class="stateItem icon-goodsnew"url='/pages/my-order/my-order'>
+      <text>已完成</text>
+    </navigator>
+    <navigator class="stateItem icon-post"url='/pages/my-order/my-order'>
+      <text>待评价</text>
+    </navigator>
+  </view>
 </view>
 <view class='band'></view>
 
-<view class='categrorys clear' >
+<view class='categrorys clear'>
   <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
     <navigator class='categrory-list' data-name="{{item.navigationUrl}}" bindtap='navigationUrl'>
       <image src='{{item.navigationPic}}' class='my-class'></image>

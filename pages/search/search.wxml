@@ -2,7 +2,7 @@
 <view class='top'>
   <view class="search-container">
     <image class="icon" src="images/search.png" />
-    <input value="{{q}}" bind:confirm="onConfirm" placeholder-class='in-bar' placeholder='{{searchDefaultValue}}' class='bar' auto-focus="true" />
+    <input value="{{keyWord}}" bindconfirm="onConfirm" bindinput='inputsearch' placeholder-class='in-bar' placeholder='{{searchDefaultValue}}' class='bar' auto-focus="true" confirm-type='search'/>
     <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" />
   </view>
   <text style='line-height:117rpx;font-size:28rpx;color:#999'>取消</text>
@@ -10,13 +10,13 @@
 <text class='tip'>热门搜索</text>
 <view class='tip-item'>
   <block wx:for="{{hot}}" wx:key="item">
-    <navigator url='../good-list/good-list'>{{item.searchHotTerm}}</navigator>
+    <navigator bindtap='todetail' data-value='{{item.searchHotValue}}'>{{item.searchHotValue}}</navigator>
   </block>
 </view>
 <text class='tip'>历史搜索</text>
 <view class='tip-item'>
   <block wx:for="{{history}}" wx:key="item">
-    <navigator url='../good-list/good-list'>{{item.searchHistoryValue}}</navigator>
+    <navigator bindtap='histodetail' data-value='{{item.searchHistoryValue}}'>{{item.searchHistoryValue}}</navigator>
   </block>
 </view>
-<image src='/images/rubbish.png' class='delete'></image>
+<image src='/images/rubbish.png' class='delete' bindtap='delete' wx:if='{{deleteyep==1}}'></image>

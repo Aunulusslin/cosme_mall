@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    deleteyep:1
   },
 
   /**
@@ -21,6 +21,7 @@ Page({
     // 热门搜索
     a.appRequest('get', hotUrl, {}, (res) => {
       let data = res.content
+      console.log(data)
       that.setData({
         hot: data
       })
@@ -29,7 +30,7 @@ Page({
     })
     // 历史搜索
     a.appRequest('get', hisUrl, {}, (res) => {
-      let data = res.content
+      let data = res
       that.setData({
         history: data
       })
@@ -46,9 +47,62 @@ Page({
       console.log('请求错误信息：' + err.errMsg);
     })
   },
+  todetail:function(e){
+    wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
+    wx.navigateTo({
+      url: '/pages/good-list-child/good-list',
+    })
+  },
+  histodetail: function (e) {
+    wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
+    wx.navigateTo({
+      url: '/pages/good-list-child/good-list',
+    })
+  },
   onDelete(event) {
     this.setData({
-      q: ""
+      keyWord: ""
+    })
+  },
+  //联想
+  inputsearch: function (event) {
+    // 如果输入框有内容，展示联想
+    var that=this
+    if (event.detail.value) {
+      that.setData({
+        keyWord: event.detail.value,
+        autoFocus: true
+      });
+    } else {
+
+    }
+  },
+  //键盘搜索
+  onConfirm: function (event) {
+    var that=this
+    if (that.data.keyWord!='') {
+      wx.setStorageSync('keyWord', that.data.keyWord)
+      wx.navigateTo({
+        url: '/pages/good-list-child/good-list',
+      })
+    } else {
+      wx.showToast({
+        title: '请重新输入',
+        icon: 'none',
+        duration: 1500
+      })
+    }
+  },
+  delete:function(){
+    let deleteUrl = globalData.domainNameA +'searchHistory'
+    a.appRequest('delete', deleteUrl, {}, (res) => { 
+      console.log(res.msg) 
+      this.onLoad()
+      this.setData({
+        deleteyep:0
+      })
+    }, (err) => {
+      console.log('请求错误信息：' + err.errMsg);
     })
   },
   /**

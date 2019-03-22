@@ -6,4 +6,4 @@
       <text>{{item.navigationName}}</text>
     </navigator>
   </block> 
-</view>
+</view> 

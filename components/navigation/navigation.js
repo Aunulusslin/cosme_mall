@@ -1,4 +1,6 @@
 // components/navigation/navigation.js
+var a = getApp();
+var globalData = a.globalData;
 Component({
   /**
    * 组件的属性列表
@@ -11,7 +13,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imgurl: 'http://xcx.carbase.vip/file/upload/',
+    imgurl: globalData.domainNameB,
     curNav: 1,
     curIndex: 0,
   },
