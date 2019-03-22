@@ -24,7 +24,7 @@
           <view class="newest-text">
             <text style='font-weight:bold;color:#ba352e'>￥ {{item.goodsPrice}}</text>
           </view>
-          <view class="newest-text"style='padding:0 0 10rpx 20rpx'>
+          <view class="newest-text" style='padding:0 0 10rpx 20rpx'>
             <text style='font-size:24rpx;color:#999'>销量：{{item.goodsSaleNum}}</text>
           </view>
         </navigator>

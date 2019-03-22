@@ -21,7 +21,6 @@ Page({
     // 热门搜索
     a.appRequest('get', hotUrl, {}, (res) => {
       let data = res.content
-      console.log(data)
       that.setData({
         hot: data
       })
@@ -47,17 +46,28 @@ Page({
       console.log('请求错误信息：' + err.errMsg);
     })
   },
-  todetail:function(e){
+  todetail: function (e) {
+
     wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
+
     wx.navigateTo({
+
       url: '/pages/good-list-child/good-list',
+
     })
+
   },
+
   histodetail: function (e) {
+
     wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
+
     wx.navigateTo({
+
       url: '/pages/good-list-child/good-list',
+
     })
+
   },
   onDelete(event) {
     this.setData({
@@ -67,23 +77,22 @@ Page({
   //联想
   inputsearch: function (event) {
     // 如果输入框有内容，展示联想
-    var that=this
+    var that = this
     if (event.detail.value) {
       that.setData({
         keyWord: event.detail.value,
         autoFocus: true
       });
     } else {
-
     }
   },
   //键盘搜索
   onConfirm: function (event) {
-    var that=this
-    if (that.data.keyWord!='') {
+    var that = this
+    if (that.data.keyWord != '') {
       wx.setStorageSync('keyWord', that.data.keyWord)
       wx.navigateTo({
-        url: '/pages/good-list-child/good-list',
+        url: '/pages/good-list-child/good-list?goodsName='+that.data.keyWord,
       })
     } else {
       wx.showToast({
@@ -93,18 +102,19 @@ Page({
       })
     }
   },
-  delete:function(){
-    let deleteUrl = globalData.domainNameA +'searchHistory'
-    a.appRequest('delete', deleteUrl, {}, (res) => { 
-      console.log(res.msg) 
+  delete: function () {
+    let deleteUrl = globalData.domainNameA + 'searchHistory'
+    a.appRequest('delete', deleteUrl, {}, (res) => {
+      console.log(res.msg)
       this.onLoad()
       this.setData({
-        deleteyep:0
+        deleteyep: 0
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

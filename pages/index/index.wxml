@@ -13,7 +13,7 @@
 <!-- 橱窗 -->
 <view class='categrory'>
   <block wx:for="{{seminarlist}}" wx:key="{{index}}" wx:for-item="item">
-     <navigator class='seminar-list' data-name="{{item.seminarUrl}}" bindtap='navigationUrl' style='width:25%;padding:0 0 20rpx 0'>
+     <navigator class='seminar-list' data-name="{{item.seminarUrl}}" bindtap='navigationUrl' style='width:25%;padding:0 0 20rpx 0' url='/pages/good-showcaselist/good-showcaselist?showcaseId={{item.showcaseId}}'>
       <image src='{{item.showcasePic}}'></image>
     </navigator>
   </block>

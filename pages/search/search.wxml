@@ -11,7 +11,7 @@
 <view class='tip-item'>
   <block wx:for="{{hot}}" wx:key="item">
     <navigator bindtap='todetail' data-value='{{item.searchHotValue}}'>{{item.searchHotValue}}</navigator>
-  </block>
+  </block> 
 </view>
 <text class='tip'>历史搜索</text>
 <view class='tip-item'>

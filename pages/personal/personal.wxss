@@ -169,13 +169,11 @@
   text-align: center;
   line-height: 60rpx
 }
-
-
 .state{
     width:100%;
     justify-content: space-around;
     padding: 10px 0;
-    position:absolute
+    position: absolute
 }
 .stateItem{
     padding:5px;

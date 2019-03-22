@@ -1,0 +1,13 @@
+<!--pages/good-showcaselist/good-showcaselist.wxml-->
+<view class="select-bottom">
+    <image src="{{img}}{{showcaseBanner}}"></image>
+</view>
+
+<view class='case-list'>
+   <view class='list-con' wx:for="{{caseArray}}" wx:key="unique" wx:for-item="item">
+      <image src='{{img}}{{item.goodsPic}}'></image>
+      <view>
+        <text>{{item.goodsDescription}}</text>
+      </view>
+   </view>
+</view>

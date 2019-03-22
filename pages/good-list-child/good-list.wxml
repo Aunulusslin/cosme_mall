@@ -1,4 +1,3 @@
-<!--pages/good-list/good-list.wxml-->
 <view wx:if='{{hasdata==true}}'>
   <view class='sort-wrap'>
     <view class='sort-btn' data-index="{{daindex1}}" bindtap="choosesort1">
@@ -22,9 +21,9 @@
             <text style='max-height:41rpx;overflow:hidden;display:block;text-overflow:ellipsis;white-space: nowrap;'>{{item.goodsName}}</text>
           </view>
           <view class="newest-text">
-            <text style='font-weight:bold;color:#ba352e'>￥ {{item.goodsPrice}}</text>
+            <text style='font-weight:bold'>￥ {{item.goodsPrice}}</text>
           </view>
-          <view class="newest-text"style='padding:0 0 10rpx 20rpx'>
+          <view class="newest-text" style='padding:0 0 10rpx 20rpx'>
             <text style='font-size:24rpx;color:#999'>销量：{{item.goodsSaleNum}}</text>
           </view>
         </navigator>
