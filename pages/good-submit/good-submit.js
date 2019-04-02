@@ -47,6 +47,12 @@ Page({
       minusStatus: minusStatus
     })
   },
+  //添加地址
+  addAddress: function(){
+    wx.navigateTo({
+      url: '../add-address/add-address',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

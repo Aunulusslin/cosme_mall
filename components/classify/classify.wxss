@@ -4,8 +4,8 @@
   flex-direction: row;
   justify-content:space-between;
   height: auto;
-  padding: 20rpx 25rpx;
-  flex-wrap: wrap
+  padding: 10rpx 25rpx;
+  flex-wrap: wrap;
 }
 .categrory-list{
   width: 20%;
@@ -21,8 +21,9 @@
   margin: 0 auto
 }
 .categrory text{
-  font-size: 28rpx;
   display: block;
   text-align: center;
-  line-height: 60rpx
+  line-height: 60rpx;
+  font-family: "PingFangSC-Thin";
+  font-size: 32rpx;
 }

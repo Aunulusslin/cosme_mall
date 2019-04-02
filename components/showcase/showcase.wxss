@@ -1,0 +1,111 @@
+/* components/floor/floor.wxss */
+
+.container {
+  background: #ececec;
+}
+
+.banner image {
+  width: 100%;
+  height: 290rpx;
+}
+
+/* .goods-list {
+  margin: 45rpx 0;
+} */
+
+.goods-list navigator {
+  width: 688rpx;
+  height: 300rpx;
+  margin: 24rpx 0;
+  background: #fff;
+  margin-left: 30rpx;
+  margin-top: 12rpx;
+}
+
+.good-img {
+  width: 240rpx;
+  height: 240rpx;
+  padding: 31rpx;
+  float: left;
+  border-radius:45rpx;
+}
+
+.good-info {
+  float: left;
+  width: 358rpx;
+  margin-top: 28rpx;
+}
+
+
+.good-info image {
+  width: 45rpx;
+  height: 45rpx;
+  float: right;
+  margin-left: 10rpx;
+}
+
+.title {
+  text-align: left;
+  font-size: 30rpx;
+  display: block;
+  font-weight: bold;
+  /* height: 80rpx; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag label {
+  font-size: 35rpx;
+  color: #878787;
+  margin-top: 16rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+/* 
+label {
+  border: 1px solid #ba352e;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 90rpx;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10rpx;
+} */
+
+.left {
+  float: left;
+}
+
+.price {
+  font-size: 50rpx;
+  color: #ba352e;
+  /* display: block; */
+}
+
+.evaluate {
+  font-size: 30rpx;
+  color: #666;
+  margin-left: 10rpx;
+  margin-right: 15rpx;
+}
+
+.bottom {
+  /* padding-top: 20rpx; */
+  /* float: right; */
+  margin-top: 8rpx;
+  line-height: 85rpx;
+}
+.clear{
+  display: block;
+  height: 0;
+  clear: both;
+  content: ''
+}
+.container{
+  border-top: 20rpx solid #ECECEC;
+}

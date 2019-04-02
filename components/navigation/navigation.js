@@ -7,6 +7,18 @@ Component({
    */
   properties: {
     cateItems:Array,
+    'firstId':{
+      type: Number,
+      observer: function (firstId, oldVal) {
+        console.log(firstId)
+        var that =this
+        var curNav = firstId
+        that.setData({
+          curNav: curNav
+        })
+      }
+
+    }
   },
 
   /**
@@ -14,7 +26,6 @@ Component({
    */
   data: {
     imgurl: globalData.domainNameB,
-    curNav: 1,
     curIndex: 0,
   },
 
@@ -28,11 +39,12 @@ Component({
         console.log(e)
       let id = e.target.dataset.id,
         index = parseInt(e.target.dataset.index);
+
       // 把点击到的某一项，设为当前index  
       this.setData({
         curNav: id,
         curIndex: index
       })
-    }
-  }
+    },
+  },
 })

@@ -1,0 +1,300 @@
+<!--pages/good-detail/good-detail.wxml-->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{domainB}}{{goodsPic}}" class="slide-image" width="100%" height="180" />
+    </swiper-item>
+  </block> 
+</swiper>
+<view class='price'>
+  <label class='after-price'>
+  ￥{{goodsPrice}}
+    <label class="span like-pricepre" style='display:inline-block;font-size:30rpx;color:#666666'>￥100</label>
+    <view style='display:inline-block;float:right'>
+      <label style='font-size:30rpx'>分享</label>
+      <image src='images/share.png' style='width:30rpx;height:30rpx;position:relative;top:3rpx;margin-left:10rpx'></image>
+    </view>
+  </label>
+  <view>
+  </view>
+  <!-- <view class='buy-num'>
+    <text>{{goodsSaleNum}}人已购买</text>
+    <text style='padding-left:20rpx'>满减后最低￥156</text>
+  </view> -->
+</view>
+<view class='good-info'>
+  <view class='info-one' style='line-height:40rpx'>
+    <label>海外自营</label>
+    <label style='margin:0 10rpx'>包税</label>
+    <text style='letter-spacing:2rpx'>{{goodsName}}  {{goodsDescription}}</text>
+  </view>
+  <!-- <view class='info-two'>
+    <text class='left-item'>促销</text>
+    <view class='info-two-right'>
+      <view class='right-item'>
+        <label>满减</label>
+        <text>Elta MD泡沫氨基酸洁面乳207ml</text>
+        <image src='/images/right.png'></image>
+      </view>
+      <view class='right-item'>
+        <label>满减</label>
+        <text>Elta MD泡沫氨基酸洁面乳207ml</text>
+      </view>
+      <view class='right-item'>
+        <label>满减</label>
+        <text>Elta MD泡沫氨基酸洁面乳207ml</text>
+      </view>
+    </view>
+  </view> -->
+  <!-- <view class='info-two' style='height:36rpx'>
+    <text class='left-item'>运费</text>
+    <view class='info-two-right'>
+      <view class='right-item'>
+        <text style='width:476rpx'>本商品单件包邮</text>
+        <image src='/images/right.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='info-two' style='height:36rpx'>
+    <text class='left-item'>说明</text>
+    <view class='info-two-right'>
+      <view class='right-item'>
+        <text style='width:476rpx'>税费说明</text>
+        <image src='/images/right.png'></image>
+      </view>
+    </view>
+  </view> -->
+</view>
+<view class='goods-spec'>
+  <view class='goods-spec1' style='margin-left:20rpx'>
+    <view>规格：0.00</view>
+  </view>
+
+  <view class='goods-spec1'>
+    <view>月销2794</view>
+  </view>
+
+  <view class='goods-spec1' style='margin-right:20rpx'>
+    <view>广东广州</view>
+  </view>
+  <view style='clear:both'></view>
+</view>
+<!-- <view class='split'></view> -->
+<view class='white'></view>
+<!-- 规格运费详情 -->
+<view class='evaluate'>
+  <view class='eva-num'>
+    <text style='width:25%;color:#999'>促销</text>
+    <!-- <text style='color:pink'>97.6%好评</text> -->
+    <text class="eva-introduce"><text>第二件折</text>单品满35.5元第二件打5折</text>
+    <image src='/images/right.png' style='margin-left:20rpx;float:right;position:relative;top:10rpx'></image>
+  </view>
+
+  <view class='eva-num'>
+    <text style='width:25%;color:#999'>运费</text>
+    <!-- <text style='color:pink'>97.6%好评</text> -->
+    <text class="eva-introduce">件数满1件，减8元运费</text>
+    <image src='/images/right.png' style='margin-left:20rpx;float:right;position:relative;top:10rpx'></image>
+  </view>
+
+
+  <view class='eva-num'>
+    <view class="li-con">
+      <view class="list-itemleft">
+        <image src="/images/og.png" alt=""></image>
+        <view class="span">全正品</view>
+      </view>
+      <view class="list-itemleft">
+        <image src="/images/og.png" alt=""></image>
+        <view class="span">价格低</view>
+      </view>
+      <view class="list-itemleft">
+        <image src="/images/og.png" alt=""></image>
+        <view class="span">放心购</view>
+      </view>
+      <view class="list-itemleft">
+        <image src="/images/og.png" alt=""></image>
+        <view class="span">快送达</view>
+      </view>
+      <view style='clear:both'></view>
+    </view>
+  </view>
+
+</view>
+<view class='white'></view>
+<view class='evaluate'>
+  <view class='eva-num'>
+    <text style='width:78%'>买家评论（567896）</text>
+    <!-- <text style='color:pink'>97.6%好评</text> -->
+    <view bindtap='allEva' style='display:inline-block'>
+      <text style='color:#ba352e'>查看全部</text>
+      <image src='/images/right.png' style='margin-left:20rpx'></image>
+    </view>
+  </view>
+  <view class='eva-detail'>
+    <!-- <view class='eva-tag'>
+      <text>全部</text>
+      <text>有图</text>
+      <text>泡沫细腻</text>
+      <text>泡沫丰富</text>
+      <text>感觉不错</text>
+      <text>泡沫丰富</text>
+    </view> -->
+    <view class='header'>
+      <image src='https://ww4.sinaimg.cn/thumb150/d2b8e4d3ly1fsbp62rm98j20qo13rtgy.jpg'></image>
+      <view class='user-name'>
+        <text>这是昵称</text>
+        <image src='/images/VIP.png' style='width: 30rpx;height: 30rpx'></image>
+      </view>
+    </view>
+    <view class='eva-content'>
+      <text class='content'>不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头</text>
+      <view class='eva-time clear'>
+        <text>2019-12-21</text>
+        <text style='margin-left:30rpx'>型号：209ml</text>
+        <!-- <text style='float:right;font-size:28rpx;color:#ba352e'>全文</text> -->
+      </view>
+      <!-- <view class='eva-img clear'>
+        <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+        <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+        <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+      </view> -->
+      <!-- <view class='dianzan'>
+        <v-message/>
+        <v-like/>
+      </view> -->
+    </view> 
+  </view>
+</view>
+<view class='white'></view>
+<view class='evaluate'>
+  <view class='eva-num'>
+    <text style='width:78%'>问大家(21)</text>
+    <!-- <text style='color:pink'>97.6%好评</text> -->
+    <text style='color:#ba352e'>查看全部</text>
+    <image src='/images/right.png' style='margin-left:20rpx'></image>
+  </view>
+  <view class='eva-detail'>
+    <view class='eva-num' style='border:0'>
+      <image src='/images/answer.png' style='width:44rpx;height:44rpx'></image>
+      <text style='width:76%;position:relative;top:-4px;margin-left:10rpx'>请问是海外代购吗，正品吗?</text>
+      <!-- <text style='color:pink'>97.6%好评</text> -->
+      <text style='float:right;position:relative;top:4px'>6个回答</text>
+
+    </view>
+  </view>
+</view>
+<view class='white'></view>
+<!-- 推荐商品 -->
+<!-- 产品翻页 -->
+<view class="tab">
+  <view class="tab-left clear" bindtap="tabFun">
+    <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">为你推荐</view>
+  </view>
+</view>
+<view class="box">
+  <view class="ul list">
+    <view class="li content1">
+      <view class="like clear">
+        <block wx:for="{{likeGoodsList}}" wx:key="{{index}}" wx:for-item="item">
+        <view class="like-list">
+          <navigator url="{{'../goods_detail/goods_detail?goodsId=' + item.goodsId}}">
+          <image src="{{imgurl}}{{item.goodsPic}}"></image>
+          <view class="span like-info">{{item.goodsName}}</view>
+          <view class="like-price">
+            <view class="span like-pricenow">￥{{item.goodsPrice}}</view>
+            <view class="span like-pricepre">¥{{item.goodsOriginalPrice}}</view>
+          </view>
+          </navigator>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='white'></view>
+<!-- 详情 -->
+<view class="tab">
+  <view class="tab-left clear" bindtap="tabFun">
+    <view class="active" id="tab-hd01" data-id="0">产品特点</view>
+  </view>
+  <view class="tab-right">
+    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+      <view class="content">
+         <rich-text nodes="{{goodsContent}}"></rich-text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 
+<view class='detail-img'>
+  <rich-text nodes="{{goodsContent}}"></rich-text>
+</view> -->
+
+<!--底部详情-->
+<view class="chartfix clear">
+  <navigator url='/pages/storeindex/storeindex' open-type='switchTab' class="home" style="box-shadow: inset -1px 0 0 #ececec" hover-class='none'>
+    <image src="http://image.xmihsh.com/upload/logo/gouwuche.png"></image>
+    <view class="span">首页</view>
+  </navigator>
+  <view class="talk" style="box-shadow: inset -1px 0 0 #ececec">
+    <image src="http://image.xmihsh.com/upload/logo/gouwuche.png"></image>
+    <view class="span">客服</view>
+  </view>
+  <navigator url='../chart/chart' class="chartcar">
+    <image src="http://image.xmihsh.com/upload/logo/gouwuche.png"></image>
+    <view class="span">购物车</view>
+  </navigator>
+  <view class="span orange clear" data-type="1" id="flip" bindtap='addMyCart'>加入购物车</view>
+  <view class="span red clear" data-type="0" id="flip2" bindtap='translatex'>立即购买</view>
+</view>
+
+<!-- 商品信息选择弹出框 -->
+<view id="panel" hidden='{{hiddenName}}'>
+  <view class="ti clear" style='height:120rpx;'>
+    <view class="infoimg clear">
+      <image src="{{domainB}}{{goodsPic}}" alt=""></image>
+      <view class="infow">
+        <view class="h1">¥{{priceSum}}</view>
+        <view class="h1" style='color:#6c6c6c;margin-top:4rpx;margin-bottom:4rpx'>库存{{goodsContent.goodsStorage}}{{goodsContent.goodsSpecName}}</view>
+        <view class="h3">已选:{{num}}{{goodsContent.goodsSpecName}}</view>
+      </view>
+    </view>
+    <view id="shut">
+      <image src="http://image.xmihsh.com/upload/logo/shut.png" data-type="3" alt="" bindtap='translatex'></image>
+    </view>
+  </view>
+  <view class="colorch" style='height:120rpx;'>
+    <view class="span">规格</view>
+    <view class="color-con clear">
+      <button>{{goodsContent.goodsSpecName}}</button>
+    </view>
+  </view>
+  <view class="numb clear">
+    <strong>数量</strong>
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <input type="number" bindchange="bindManual" value="{{num}}" />
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+  <navigator open-type="redirect">
+    <!-- 购买 -->
+    <button wx:if="{{type == 0}}" catchtap='queryOrder' class="qd">确定</button>
+    <!-- 购物车 -->
+    <button wx:if="{{type == 1}}" catchtap='addCar' class="qd">确定-车</button>
+  </navigator>
+
+</view>
+
+<!-- <view class='fixed'>
+   <navigator class='addcart'>
+      <image src='/images/cart.png'></image>
+      <text>购物车</text>
+   </navigator>
+   <button>加入购物车</button>
+   <button style=' background: #ba352e;color: #fff' bindtap='tocheck'>立即购买</button>
+</view> -->

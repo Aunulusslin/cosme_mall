@@ -1,4 +1,7 @@
 <!--pages/cart/cart.wxml-->
+<view class='header'>
+  <label>共2件商品</label>
+</view>
 <v-cart/>
 
 <!-- tabbar -->

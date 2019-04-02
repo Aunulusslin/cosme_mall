@@ -1,0 +1,145 @@
+.eva-num {
+  padding: 20rpx 20rpx;
+}
+
+.evaluate {
+  background: #fff;
+}
+
+.eva-num {
+  border-bottom: 1px solid #ececec;
+}
+
+.eva-num text {
+  font-size: 28rpx;
+  color: #333;
+  display: inline-block;
+}
+
+.eva-num image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.eva-detail-cells {
+  padding: 20rpx 20rpx;
+}
+
+.eva-tag {
+  height: 85rpx;
+  position: relative;
+}
+
+.active{
+  width: auto;
+  height: 36rpx;
+  font-size: 25rpx;
+  color: #666;
+  background: #FFE7Eb;
+  padding: 10rpx 30rpx;
+  border-radius: 90rpx;
+  float: left;
+  margin: 20rpx 20rpx;
+  line-height: 34rpx
+}
+.noActive {
+  width: auto;
+  height: 36rpx;
+  font-size: 25rpx;
+  color: #666;
+  background: #ececec;
+  padding: 10rpx 30rpx;
+  border-radius: 90rpx;
+  float: left;
+  margin: 20rpx 20rpx;
+  line-height: 34rpx
+}
+
+.header {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.header image:first-child {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 90rpx;
+}
+
+.header text {
+  font-size: 28rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.eva-time {
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 0;
+}
+
+.eva-img {
+  margin-top: 30rpx
+}
+
+.eva-img image {
+  width: 182rpx;
+  height: 200rpx;
+  float: left;
+}
+
+.eva-img image:nth-child(2) {
+  margin: 0 55rpx;
+}
+
+.load-more {
+  width: 100%;
+  text-align: center;
+}
+
+.load-more image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.dianzan {
+  padding: 20rpx 0;
+}
+
+v-like {
+  float: right;
+}
+
+v-message {
+  float: right;
+}
+
+.eva-content {
+  margin: 30rpx 30rpx 20rpx 0;
+}
+
+.white {
+  height: 20rpx;
+  background: #efeff4;
+}
+.eva-head{
+  padding: 20rpx 20rpx;
+}
+.load-more image{
+  position: relative;
+  top: 7rpx
+}
+.load-more label{
+  color: #AAAAAA;
+}

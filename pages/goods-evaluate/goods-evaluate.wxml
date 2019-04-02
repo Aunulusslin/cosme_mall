@@ -1,0 +1,47 @@
+<view class='eva-head'>
+  <view class='eva-tag'>
+    <label class='{{num==1?"active":"noActive"}}' data-num='1' catchtap='changeOil'>好评(10)</label>
+    <label class='{{num==2?"active":"noActive"}}' data-num='2' catchtap='changeOil'>中评(1222)</label>
+    <label class='{{num==4?"active":"noActive"}}' data-num='4' catchtap='changeOil'>差评(100)</label>
+  </view>
+  <!-- <view class='load-more' bindtap='down'>
+    <label>{{loadMessage}}</label>
+    <image src='{{down}}'></image>
+  </view> -->
+</view>
+<view class='white'></view>
+<view class='eva-detail'>
+  <view class='eva-num'>
+    <text style='width:78%'>问大家(21)</text>
+    <!-- <text style='color:pink'>97.6%好评</text> -->
+    <text style='color:#ba352e'>查看全部</text>
+    <image src='/images/right.png' style='margin-left:20rpx'></image>
+  </view>
+  <view class='eva-detail-cess'>
+    <view class='eva-detail-cells' bindtap='myEva'>
+      <view class='user-eva'>
+        <view class='header' style='width:50%'>
+          <image src='https://ww4.sinaimg.cn/thumb150/d2b8e4d3ly1fsbp62rm98j20qo13rtgy.jpg'></image>
+          <view class='user-name'>
+            <text>这是昵称</text>
+            <image src='/images/VIP.png' style='width: 30rpx;height: 30rpx'></image>
+            <view class='eva-time' style='padding:0'>2019-12-21 型号:209ml</view>
+          </view>
+        </view>
+        <view class='eva-content'>
+          <text class='content'>不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头当墙头不是自己饭的爱豆 也不把他当墙头</text>
+          <view class='eva-img clear'>
+            <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+            <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+            <image src='https://ww1.sinaimg.cn/thumb150/d6a6906bly1fnvdt89tvyj20dw0lxt9c.jpg'></image>
+          </view> 
+          <view class='dianzan'>
+            <v-message/>
+            <v-like/>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='white' style='height:1rpx'></view>
+  </view> 
+  </view>

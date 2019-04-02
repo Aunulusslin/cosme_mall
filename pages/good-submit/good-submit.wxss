@@ -1,5 +1,7 @@
 /* pages/good-submit/good-submit.wxss */
-
+page{
+  background: #f2f2f2
+}
 .cart-count-down, .cart-count-add {
   font-size: 44rpx;
   width: 50rpx;
@@ -13,17 +15,19 @@
 /*主容器*/
 
 .stepper {
-  width: 80px;
-  height: 26px;
+  width: 160rpx;
+  height: 56rpx;
   border: 1px solid #ccc;
   border-radius: 3px;
+  position: relative;
+  bottom: 7rpx;
 }
 
 /*加号和减号*/
 
 .stepper text {
   float: left;
-  width: 19px;
+  width: 38rpx;
   line-height: 26px;
   text-align: center;
 }
@@ -31,8 +35,8 @@
 /*数值*/
 
 .stepper input {
-  width: 40px;
-  height: 26px;
+  width: 80rpx;
+  height: 56rpx;
   float: left;
   margin: 0 auto;
   text-align: center;
@@ -55,6 +59,9 @@
 
 .icon {
   padding: 20rpx 0;
+  background: #FFF;
+  margin: 20rpx 20rpx;
+  border-radius: 30rpx
 }
 
 .icon image {
@@ -77,9 +84,13 @@
 }
 .con{
   padding: 20rpx 20rpx;
+  margin: 20rpx 20rpx;
+  width: 90%;
+  background: #fff;
+  border-radius: 30rpx
 }
 .content {
-  border: 1rpx solid #ececec;
+  /* border: 1rpx solid #ececec; */
   display: flex;
   font-size: 28rpx;
   justify-content: space-between;
@@ -108,9 +119,10 @@ margin-right: 30rpx;
 .tb-1{
   display: flex;
   font-size: 28rpx;
+  height: 48rpx;
   justify-content: space-between;
-  padding: 20rpx 0;
-  border-bottom: 1rpx solid #ececec
+  padding: 24rpx 0;
+  /* border-bottom: 1rpx solid #ececec */
 }
 .left{
   font-size: 28rpx;
@@ -127,7 +139,7 @@ margin-right: 30rpx;
 }
 .carry-price{
   position: relative;
-  left: 226rpx;
+  float: right;
   line-height: 40rpx
 }
 .tip{
@@ -160,9 +172,9 @@ margin: 0 20rpx
 .rt{
   width: 208rpx;
 }
-.lt{
+/* .lt{
   width: 700rpx;
-}
+} */
 .sx{
   display: flex;
   flex-direction: column
@@ -176,11 +188,11 @@ font-size: 32rpx
 .cx{
   display: flex;
   position: relative;
-  left: 200rpx
+  left: 170rpx
 }
 .cx navigator{
   width: 160rpx;
-  padding: 20rpx 20rpx;
+  padding: 24rpx 20rpx;
   background: #ba352e;
   text-align: center;
   color: #fff;
@@ -191,4 +203,7 @@ font-size: 32rpx
   font-size: 24rpx;
   color: #ba352e;
   line-height: 80rpx
+}
+.white{
+  border-bottom:1rpx solid #ececec;
 }

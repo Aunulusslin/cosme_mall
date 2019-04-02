@@ -1,0 +1,11 @@
+<!--components/search/index.wxml-->
+<view class='container'>
+  <navigator class='left' url='../index/index'>
+    <image src='images/class.png' />
+  </navigator>
+  <navigator class="search-container" url='../search/search'>
+    <image class="icon" src="images/search.png" />
+    <input value="{{q}}" bind:confirm="onConfirm" placeholder-class='in-bar' placeholder='口红' class='bar' auto-focus="false" disabled='true'/>
+    <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" />
+  </navigator>
+</view>

@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "v-showcase": "/components/showcase/showcase"
+  }
 }

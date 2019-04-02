@@ -2,11 +2,11 @@
 <view wx:if='{{hasdata==true}}'>
   <view class='sort-wrap'>
     <view class='sort-btn' data-index="{{daindex1}}" bindtap="choosesort1">
-      销量
+      价格
       <image src="{{imageurl1}}"></image>
     </view>
     <view class='sort-btn' data-index="{{daindex2}}" bindtap="choosesort2">
-      价格
+      销量
       <image src="{{imageurl2}}"></image>
     </view>
   </view>

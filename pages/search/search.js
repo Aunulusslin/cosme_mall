@@ -30,6 +30,14 @@ Page({
     // 历史搜索
     a.appRequest('get', hisUrl, {}, (res) => {
       let data = res
+      var hidden
+      if(data == ''){
+        console.log("ddd:"+hidden)
+        hidden ='none'
+        that.setData({
+          hidden:hidden
+        })
+      }
       that.setData({
         history: data
       })
@@ -48,24 +56,17 @@ Page({
   },
   todetail: function (e) {
 
-    wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
-
+    var goodsName = e.currentTarget.dataset.value
     wx.navigateTo({
-
-      url: '/pages/good-list-child/good-list',
-
+      url: '/pages/good-list-child/good-list?goodsName=' + goodsName,
     })
 
   },
 
   histodetail: function (e) {
-
-    wx.setStorageSync('keyWord', e.currentTarget.dataset.value)
-
+    var goodsName = e.currentTarget.dataset.value
     wx.navigateTo({
-
-      url: '/pages/good-list-child/good-list',
-
+      url: '/pages/good-list-child/good-list?goodsName=' + goodsName,
     })
 
   },
@@ -90,6 +91,7 @@ Page({
   onConfirm: function (event) {
     var that = this
     if (that.data.keyWord != '') {
+      console.log("keyWord:" + that.data.keyWord)
       wx.setStorageSync('keyWord', that.data.keyWord)
       wx.navigateTo({
         url: '/pages/good-list-child/good-list?goodsName='+that.data.keyWord,
@@ -104,14 +106,29 @@ Page({
   },
   delete: function () {
     let deleteUrl = globalData.domainNameA + 'searchHistory'
-    a.appRequest('delete', deleteUrl, {}, (res) => {
-      console.log(res.msg)
-      this.onLoad()
-      this.setData({
-        deleteyep: 0
-      })
-    }, (err) => {
-      console.log('请求错误信息：' + err.errMsg);
+    this.onLoad()
+    var that =this
+    wx.showModal({
+      title: '提示',
+      content: '确认删除全部历史记录',
+      success: function (res) {
+        if (res.confirm) { //这里是点击了确定以后
+          console.log('用户点击确定')
+          a.appRequest('delete', deleteUrl, {}, (res) => {
+            console.log(res.msg)
+            var hidden
+            hidden = 'none'
+            that.setData({
+              deleteyep: 0,
+              hidden: hidden
+            })
+          }, (err) => {
+            console.log('请求错误信息：' + err.errMsg);
+          })
+        } else { //这里是点击了取消以后
+          console.log('用户点击取消')
+        }
+      }
     })
   },
 

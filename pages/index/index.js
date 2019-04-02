@@ -1,10 +1,10 @@
 //index.js
 //获取应用实例
-var a = getApp(); 
+var a = getApp();
 var globalData = a.globalData;
 Page({
   data: {
-    flag: false,
+    flag: globalData.bounced,
     navData: [{
       name: "首页", //文本
       current: 1, //是否是当前页，0不是  1是
@@ -26,10 +26,12 @@ Page({
     }, {
       name: "社区",
       current: 0,
-      style: 1,
+      style: 0,
       ico: '',
+        imgUrl: '/images/community2.png',
+        curUrl: '/images/community1.png',
       fn: '',
-      adurl: '/pages/community/community',
+      // adurl: '/pages/community/community',
     }, {
       name: "购物车",
       current: 0,
@@ -51,17 +53,18 @@ Page({
   },
   // 遮罩层隐藏
   conceal: function() {
+    var bounced=globalData.bounced
     this.setData({
-      flag: true
+      flag: true,
+      bounced:true
     })
   },
 
   //事件处理函数
-  onShow: function() {
-  },
+  onShow: function() {},
   onReady: function() {},
   onLoad: function() {
-    var that=this
+    var that = this
     //首页广告
     let bounceUrl = a.globalRequestUrl('domainNameA', 'bounce')
     let url = a.globalRequestUrl('domainNameA', 'siteA')
@@ -72,7 +75,7 @@ Page({
     //弹窗
     a.appRequest('get', bounceUrl, {}, (res) => {
       that.setData({
-        bouncedImg: globalData.domainNameB+ res.bouncedImg
+        bouncedImg: globalData.domainNameB + res.bouncedImg
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);
@@ -103,10 +106,14 @@ Page({
     })
     // 首页专题
     a.appRequest('get', subUrl, {}, (res) => {
-      let data = res.data
-      that.setData({
-        subjectPic: globalData.domainNameB + data[1].subjectPic
+      let data = res.data.content
+      data.forEach(item => {
+        item.subjectPic = globalData.domainNameB + item.subjectPic
+        that.setData({
+          subjectPic: item.subjectPic
+        })
       })
+
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);
     })
@@ -115,14 +122,15 @@ Page({
       let data = res.data
       console.log(data)
       data.forEach(item => {
-        item.floorPic= globalData.domainNameB + item.floor.floorPic
-        item.goodsList.forEach(item =>{
-        console.log("2222:"+item.goodsPic)
-        item.goodsPic = globalData.domainNameB + item.goodsPic
+        item.floorPic = globalData.domainNameB + item.floor.floorPic
+        item.goodsList.forEach(item => {
+          console.log("2222:" + item.goodsPic)
+          item.goodsPic = globalData.domainNameB + item.goodsPic
+
         })
       })
       that.setData({
-        floorList:data
+        floorList: data
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);
@@ -134,7 +142,7 @@ Page({
         item.showcasePic = globalData.domainNameB + item.showcasePic
       })
       that.setData({
-        seminarlist:data
+        seminarlist: data
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);

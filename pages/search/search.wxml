@@ -5,18 +5,41 @@
     <input value="{{keyWord}}" bindconfirm="onConfirm" bindinput='inputsearch' placeholder-class='in-bar' placeholder='{{searchDefaultValue}}' class='bar' auto-focus="true" confirm-type='search'/>
     <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" />
   </view>
-  <text style='line-height:117rpx;font-size:28rpx;color:#999'>取消</text>
+  <!-- <label style='font-size:28rpx;color:#fff;background:#ba352e'>搜索</label> -->
+  <view style='background:#ba352e;height:60rpx;margin-top:30rpx;line-height:60rpx;color:#fff;width:90rpx;text-align:center;border-radius:8px' bindtap='onConfirm'>搜索</view>
 </view>
-<text class='tip'>热门搜索</text>
+<text class='tip' style='padding-bottom:0'>热门搜索</text>
 <view class='tip-item'>
   <block wx:for="{{hot}}" wx:key="item">
     <navigator bindtap='todetail' data-value='{{item.searchHotValue}}'>{{item.searchHotValue}}</navigator>
-  </block> 
-</view>
-<text class='tip'>历史搜索</text>
-<view class='tip-item'>
-  <block wx:for="{{history}}" wx:key="item">
-    <navigator bindtap='histodetail' data-value='{{item.searchHistoryValue}}'>{{item.searchHistoryValue}}</navigator>
   </block>
 </view>
-<image src='/images/rubbish.png' class='delete' bindtap='delete' wx:if='{{deleteyep==1}}'></image>
+<view style='display:{{hidden}}'>
+  <view class='tip' style='padding-bottom:0'>
+    <label>历史搜索</label>
+    <image src='/images/rubbish.png' class='delete' bindtap='delete' wx:if='{{deleteyep==1}}'></image>
+  </view>
+
+<view class="search-box" style='width:100%'>
+  <view class="search-box-cell">
+    <block wx:for="{{history}}" wx:key="item">
+      <navigator bindtap='histodetail' data-value='{{item.searchHistoryValue}}'>
+        <view class='search-value clearfloat:after'>
+          <label>{{item.searchHistoryValue}}</label>
+        </view>
+        <!-- <label>{{item.searchHistoryValue}}</label> -->
+      </navigator>
+    </block>
+
+  </view>
+</view>
+
+
+  <!-- <view class='tip-item'>
+    <block wx:for="{{history}}" wx:key="item">
+      <navigator bindtap='histodetail' data-value='{{item.searchHistoryValue}}'>
+        <label>{{item.searchHistoryValue}}</label>
+      </navigator>
+    </block>
+  </view> -->
+</view>

@@ -3,9 +3,10 @@ App({
   onLaunch: function() {
     wx.login({
       success(res) {
+        console.log("res.code:"+res.code)
         if (res.code) {
           wx.request({
-            url: 'http://api.xmsmoo.cn/login?code=' + res.code,
+            url: 'http://xmsmoo.natapp1.cc/api/login?code=' + res.code,
             method: 'GET',
             header: {},
             success(res) {
@@ -59,9 +60,12 @@ App({
 
   //全局所有请求Url
   globalData: {
+    bounced:false,
     userInfo: null,
     sessionkey: null,
-    domainNameA: 'http://api.xmsmoo.cn/', //请求域名A
+    // domainNameA: 'http://api.xmsmoo.cn/api/', //请求域名A
+    domainNameA: 'http://xmsmoo.natapp1.cc/api/', //请求域名A
+    // domainNameA: 'http://192.168.1.13:8080/api/',
     domainNameB: 'http://img.xmsmoo.cn/upload/', //请求域名B(存放图片)
     bounce: "bounced",
     siteA: 'adv/',
@@ -74,5 +78,6 @@ App({
     searchA: "searchHot", //热门搜索
     searchB: "searchHistory", //历史搜索
     searchC: "searchDefault", //默认搜索
+    addressA: "address/listMemberAddress", //  我的收货地址
   }
 })

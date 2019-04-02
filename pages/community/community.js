@@ -9,7 +9,7 @@ Page({
         navData: [
           {
             name: "首页",  //文本
-            current: 1,    //是否是当前页，0不是  1是
+            current: 0,    //是否是当前页，0不是  1是
             style: 0,     //样式
             imgUrl: '/images/home2.png',
             curUrl: '/images/home1.png',
@@ -27,11 +27,13 @@ Page({
             url: '/pages/class/class',
           }, {
             name: "社区",
-            current: 0,
-            style: 1,
+            current: 1,
+            style: 0,
             ico: '',
             fn: '',
-            adurl: '/pages/community/community',
+            imgUrl: '/images/community2.png',
+            curUrl: '/images/community1.png',
+            url: '/pages/community/community',
           }, {
             name: "购物车",
             current: 0,

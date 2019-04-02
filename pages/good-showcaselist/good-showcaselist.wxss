@@ -1,5 +1,7 @@
 /* pages/good-showcaselist/good-showcaselist.wxss */
-
+page{
+  padding-bottom: 0
+}
 .select-bottom image {
   width: 750rpx;
   height: 240rpx;
@@ -29,4 +31,25 @@
   height: 80rpx;
   overflow: hidden;
   color: #333
+}
+.showcase-title{
+  text-align: center;
+  margin-top: 15rpx;
+}
+.showcase-title image{
+  top:14rpx; 
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 10rpx;
+}
+.showcase-title label{
+  font-size: 38rpx;
+}
+.bottom-title-cells label{
+  font-size: 40rpx;
+  text-align: center
+}
+.showcase-title-cell{
+  padding-bottom: 23rpx
 }

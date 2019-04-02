@@ -2,7 +2,7 @@
 
 .top {
   background: #ba352e;
-  height: 300rpx;
+  height: 250rpx;
 }
 
 .headimg {
@@ -80,27 +80,31 @@
 }
 
 .card-pocket {
-  padding: 30rpx 0;
+  padding: 20rpx 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border-top-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
   background: #fff;
-  height: 140rpx;
+  height: 85rpx;
   position: relative;
   bottom: 40rpx;
   font-size: 32rpx;
   color: #afafaf;
 }
 .card-pocket text{
-  padding: 8rpx 0;
+  padding: 16rpx 0;
 }
 
 .card-one, .card-two, .card-three {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.card-one{
+  position: relative;
+  top: -18rpx
 }
 
 .card-one image {
@@ -133,14 +137,20 @@
 .my-order{
   height: 250rpx
 }
-.title{
-  font-size: 34rpx;
-  color: #666;
-  display: block;
+.title-cells{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: black;
   height: 50rpx;
+  display: inline-block
+}
+.title{
   border-bottom: 1rpx solid #ececec;
   padding: 20rpx 20rpx;
-  line-height: 50rpx
+}
+.title image{
+  width: 20rpx;
+  height: 20rpx;
 }
 .red-text{
   border-radius: 0rpx!important

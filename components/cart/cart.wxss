@@ -1,14 +1,23 @@
 /* components/cart/cart.wxss */
-
+page{
+  background: #ececec
+}
 .cart-box {
   padding-bottom: 100rpx;
+  position: relative;
+  top: -110rpx;
+  left: 40rpx;
+  margin-right: 78rpx
 }
 
 .cart-list {
   position: relative;
-  padding: 20rpx 20rpx 20rpx 285rpx;
-  height: 265rpx;
-  border-bottom: 1rpx solid #e9e9e9;
+  padding-left: 285rpx;
+  padding-top:0;
+  height: 280rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+  border-radius: 25rpx;
 }
 
 .cart-list .cart-pro-select {
@@ -21,13 +30,14 @@
 
 .cart-list .cart-thumb {
   position: absolute;
-  top: 20rpx;
+  top: 57rpx;
   left: 85rpx;
   width: 185rpx;
   height: 185rpx;
 }
 
 .cart-list .cart-pro-name {
+  margin-top: 20rpx;
   display: inline-block;
   width: 300rpx;
   font-size: 32rpx;
@@ -45,6 +55,7 @@ label {
   border: 1rpx solid #ba352e;
   color: white;
   background: #ba352e;
+  line-height: 41rpx
 }
 
 label:nth-child(2) {
@@ -61,31 +72,41 @@ label:nth-child(2) {
 }
 
 .cart-list .cart-count-box {
-  position: absolute;
   left: 285;
   bottom: 100rpx;
-  width: 250rpx;
-  height: 80rpx;
+  border: 1px solid #ccc;
+  float: right;
+  margin-right: 30rpx;
+  position: relative;
+  top: -40rpx
 }
 
 .cart-list .cart-count-box text {
   display: inline-block;
-  line-height: 80rpx;
+  line-height: 35rpx;
   text-align: center;
 }
 
-.cart-count-down, .cart-count-add {
-  font-size: 44rpx;
+.cart-count-down {
+  font-size: 35rpx;
   width: 50rpx;
-  height: 100%;
+  height: 40rpx;
+  border-right: 1px solid #ccc;
+}
+
+.cart-count-add {
+  font-size: 35rpx;
+  width: 49rpx;
+  height: 40rpx;
+  border-left: 1px solid #ccc;
 }
 
 .cart-count-num {
-  width: 150rpx;
+  width: 40rpx;
 }
 
 .cart-del {
-  position: absolute;
+  float: right;
   right: 20rpx;
   bottom: 100rpx;
   width: 80rpx;
@@ -176,19 +197,28 @@ navigator:visited {
   border-radius: 10rpx;
   z-index: 111;
   padding: 20rpx 0;
-  left:-200rpx
+  left: -200rpx;
 }
-.Discount{
-  font-size: 24rpx
+
+.Discount {
+  font-size: 24rpx;
+  margin-top: 20rpx;
 }
-.Full-reduction{
+
+.Full-reduction {
   position: fixed;
   bottom: 100rpx;
   width: 100%;
   background: rgb(247, 216, 216);
   height: 70rpx;
 }
-.Full-reduction text{
+
+.Full-reduction text {
   font-size: 28rpx;
-  color: #333
+  color: #333;
+}
+.cart-pro-pricex{
+  height:105rpx;
+  line-height:50rpx;
+  color:rgb(218, 20, 53);
 }

@@ -19,17 +19,28 @@ Page({
     let sortupUrl = globalData.domainNameA + 'showcase/listShowcaseGoods/' + showcaseId
     a.appRequest('get', sortupUrl, {}, (res) => {
       let data = res.data
-      console.log(data.goodsList)
+      console.log("data.goodsList"+data.goodsList)
+      var goodsList =data.goodsList
+      goodsList.forEach(item => {
+        item.goodsPic = globalData.domainNameB + item.goodsPic
+      })
+
       that.setData({
         caseArray: data.goodsList,
         img: globalData.domainNameB,
-        showcaseBanner: data.showcaseBanner
+        showcaseBanner: data.showcaseBanner,
+        showcaseName:data.showcaseName,
+        showcaseList:data
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg)
     })
   },
+  Jump_goodsDetail:function(){
 
+  },
+
+  // url='/pages/good-detail/good-detail?goodsId={{item.goodsId}}' >
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -16,16 +16,19 @@ page {
   display: flex;
   padding: 20rpx 30rpx;
   font-size: 28rpx;
+  margin-bottom: 30rpx
 }
 
 .left {
   width: 84%
 }
 .name{
-  margin-right: 90rpx;
+  margin-right: 35rpx;
+  font-size: 40rpx;
 }
 .call{
   margin-right: 30rpx;
+   color:#a4a4a4
 }
 .origin{
   width: 70rpx;
@@ -48,4 +51,7 @@ page {
   color: #ba352e;
   width: 95%;
  margin-left: 2.5%
+}
+.call{
+  /* font-size: 30rpx */
 }

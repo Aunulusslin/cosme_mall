@@ -28,10 +28,12 @@ Page({
     }, {
       name: "社区",
       current: 0,
-      style: 1,
+      style: 0,
       ico: '',
       fn: '',
-      adurl: '/pages/community/community',
+      imgUrl: '/images/community2.png',
+      curUrl: '/images/community1.png',
+      url: '/pages/community/community',
     }, {
       name: "购物车",
       current: 0,
@@ -95,6 +97,11 @@ Page({
       })
     }, (err) => {
       console.log('请求错误信息：' + err.errMsg);
+    })
+  },
+  allOrders:function(){
+    wx.navigateTo({
+      url: '/pages/my-order/my-order?currtab=0',
     })
   },
   /**

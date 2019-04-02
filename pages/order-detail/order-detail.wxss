@@ -6,6 +6,7 @@ page{
 .status {
   padding: 20rpx 20rpx;
   border: 1rpx solid #ececec;
+  background: #fff
 }
 
 .status image {

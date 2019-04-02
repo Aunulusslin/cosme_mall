@@ -49,9 +49,9 @@
 .tag {
   font-size: 24rpx;
   color: #ba352e;
-  padding: 10rpx 0;
+  padding: 35rpx 0;
 }
-
+/* 
 label {
   border: 1px solid #ba352e;
   width: 40rpx;
@@ -60,7 +60,7 @@ label {
   display: inline-block;
   text-align: center;
   margin-right: 10rpx;
-}
+} */
 
 .left {
   float: left;

@@ -1,0 +1,27 @@
+<view class='header'>  
+  <view class='content'>
+    <image src="images/paySuccess.png"></image>
+  </view>
+  <view class='title'>
+    <label>订单支付成功</label>
+  </view>
+  <view class='money'>
+    <label>￥0.01</label>
+  </view>
+</view>
+<view class='pay_type'>
+  <view class='pay_type_cell'>
+    <label>支付方式</label>
+    <label style='float:right;color:#9a9a9a'>微信支付</label>
+  </view>
+</view>
+
+<view class='btn-cells'>
+  <button class='{{num==1?"active":"noActive"}}' data-num='1' catchtap='changebtn'>分享一下</button>
+  <button class='{{num==2?"active":"noActive"}}' data-num='2' catchtap='changebtn' >再来一单</button>
+  <button class='{{num==3?"active":"noActive"}}' data-num='3' catchtap='changebtn'>查看详情</button>
+  <view style='clear:both'></view>
+</view>
+<view class='prompt'>
+  <label>温馨提示：　商家不会以商品或订单异常，系统升级为由要求您点击任何链接或提供个人信息进行退款操作</label>
+</view>

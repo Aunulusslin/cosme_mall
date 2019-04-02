@@ -1,1 +1,12 @@
 /* pages/cart/cart.wxss */
+.header{
+  width: 100%;
+  height: 200rpx;
+  background: #ba352e
+}
+.header label{
+  color: #fff;
+  letter-spacing: 2rpx;
+  margin: 10rpx;
+  font-size: 30rpx
+}

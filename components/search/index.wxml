@@ -1,6 +1,6 @@
 <!--components/search/index.wxml-->
 <view class='container'>
-  <navigator class='left' url='../class/class' open-type='switchTab'>
+  <navigator class='left' url='../class/class'>
     <image src='images/class.png' />
     <text>分类</text>
   </navigator>

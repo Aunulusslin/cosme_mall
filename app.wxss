@@ -1,7 +1,9 @@
 /**app.wxss**/
 @import "icon.wxss";
 page{
-  padding-bottom: 130rpx
+  padding-bottom: 100rpx;
+  font-family: "PingFangSC-Thin";
+  font-size: 32rpx;
 }
 .container {
   height: 100%;

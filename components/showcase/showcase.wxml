@@ -1,0 +1,21 @@
+<!-- components/showcase/showcase.wxml -->
+<view class='container'>
+  <view class='goods-list'>
+      <navigator class='clear' url='/pages/good-detail/good-detail?goodsId={{item.goodsId}}' wx:for="{{goodsList}}" wx:key="{{index}}" wx:for-item="item"  style='border-radius:20rpx' >
+        <image class='good-img' src='{{item.goodsPic}}' style='border-radius:120rpx'></image>
+        <view class='good-info'>
+          <label class='title'>{{item.goodsName}}</label>
+          <view class='tag' style='height:110rpx'>
+             <label>{{item.goodsDescription}}</label>
+          </view>
+          <view class='bottom'>
+            <view class='left'>
+              <text class='price'>￥{{item.goodsPrice}}</text>
+              <text class='evaluate'>6.3万条评论</text>
+            </view>
+            <view style='clear:both'></view>
+          </view>
+        </view>
+      </navigator>
+  </view>
+</view>

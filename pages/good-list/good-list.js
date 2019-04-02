@@ -18,14 +18,14 @@ Page({
       this.setData({
         imageurl1: "/images/sort-tip_05.png",
         daindex1: 1,
-        saleSortFlat: 1
+        priceSortFlag: 2
       })
       this.sortup()
     } else {
       this.setData({
         imageurl1: "/images/sort-tip_03.png",
         daindex1: 0,
-        saleSortFlat: 2
+        priceSortFlag: 1
       })
       this.sortup() 
     }
@@ -35,23 +35,23 @@ Page({
       this.setData({
         imageurl2: "/images/sort-tip_05.png",
         daindex2: 1,
-        priceSortFlat: 1
+        saleSortFlag: 4
       })
     this.sortup()
     } else {
       this.setData({
         imageurl2: "/images/sort-tip_03.png",
         daindex2: 0,
-        priceSortFlat: 2
+        saleSortFlag: 3
       })
       this.sortup()
     }
   },
   sortup: function() {
     var that = this
-    var saleSortFlat = that.data.saleSortFlat
-    var priceSortFlat = that.data.priceSortFlat
-    let sortupUrl = globalData.domainNameA + 'goodsClass/screeningGoodsList/' + that.data.goodsClassId + '?priceSortFlat=' + priceSortFlat + '&saleSortFlat=' + saleSortFlat
+    var saleSortFlag = that.data.saleSortFlag
+    var priceSortFlag = that.data.priceSortFlag
+    let sortupUrl = globalData.domainNameA + 'goodsClass/screeningGoodsList/' + that.data.goodsClassId + '?priceSortFlag=' + priceSortFlag + '&saleSortFlag=' + saleSortFlag
     // 热门搜索
     console.log(sortupUrl)
     a.appRequest('get', sortupUrl, {}, (res) => {

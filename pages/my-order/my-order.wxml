@@ -37,7 +37,7 @@
     <scroll-view class="hot-box" scroll-y="true">
       <navigator class="orderDetails" wx:for="{{waitPayOrder}}" wx:key=" " url='../order-detail/order-detail'>
         <view class="orderListTitle">
-          <text class="userName">{{item.name}}</text>
+          <text class="userName">订单编号：{{item.id}}</text>
           <text class="orderStatus">{{item.state}}</text>
         </view>
         <view class="orderListDetails">
@@ -45,8 +45,9 @@
             <image src="{{item.url}}" background-size="cover"></image>
           </view>
           <view class="productInfo">
+            <text class="productPrice">{{item.info}}</text>
             <view class="productTitle">预定时间: {{item.time}}</view>
-            <text class="productPrice">当前状态：{{item.status}}</text>
+            <!-- <text class="productPrice">当前状态：{{item.status}}</text> -->
           </view>
         </view>
         <view class="productCount">
@@ -62,7 +63,7 @@
     <scroll-view class="hot-box" scroll-y="true">
       <navigator class="orderDetails" wx:for="{{lostOrder}}" wx:key=" " url='../order-detail/order-detail'>
         <view class="orderListTitle">
-          <text class="userName">{{item.name}}</text>
+          <text class="userName">订单编号：{{item.id}}</text>
           <text class="orderStatus">{{item.state}}</text>
         </view>
         <view class="orderListDetails">
@@ -70,8 +71,9 @@
             <image src="{{item.url}}" background-size="cover"></image>
           </view>
           <view class="productInfo">
+            <text class="productPrice">{{item.info}}</text>
             <view class="productTitle">预定时间: {{item.time}}</view>
-            <text class="productPrice">当前状态：{{item.status}}</text>
+            <!-- <text class="productPrice">当前状态：{{item.status}}</text> -->
           </view>
         </view>
         <view class="productCount">
@@ -87,7 +89,7 @@
     <scroll-view class="hot-box" scroll-y="true">
       <navigator class="orderDetails" wx:for="{{sentOrder}}" wx:key=" " url='../order-detail/order-detail'>
         <view class="orderListTitle">
-          <text class="userName">{{item.name}}</text>
+          <text class="userName">订单编号：{{item.id}}</text>
           <text class="orderStatus">{{item.state}}</text>
         </view>
         <view class="orderListDetails">
@@ -95,8 +97,9 @@
             <image src="{{item.url}}" background-size="cover"></image>
           </view>
           <view class="productInfo">
+            <text class="productPrice">{{item.info}}</text>
             <view class="productTitle">预定时间: {{item.time}}</view>
-            <text class="productPrice">当前状态：{{item.status}}</text>
+            <!-- <text class="productPrice">当前状态：{{item.status}}</text> -->
           </view>
         </view>
         <view class="productCount">
@@ -116,7 +119,7 @@
     <scroll-view class="hot-box" scroll-y="true">
       <navigator class="orderDetails" wx:for="{{evaOrder}}" wx:key=" " url='../order-detail/order-detail'>
         <view class="orderListTitle">
-          <text class="userName">{{item.name}}</text>
+          <text class="userName">订单编号：{{item.id}}</text>
           <text class="orderStatus">{{item.state}}</text>
         </view>
         <view class="orderListDetails">
@@ -124,8 +127,9 @@
             <image src="{{item.url}}" background-size="cover"></image>
           </view>
           <view class="productInfo">
+            <text class="productPrice">{{item.info}}</text>
             <view class="productTitle">预定时间: {{item.time}}</view>
-            <text class="productPrice">当前状态：{{item.status}}</text>
+            <!-- <text class="productPrice">当前状态：{{item.status}}</text> -->
           </view>
         </view>
         <view class="productCount">

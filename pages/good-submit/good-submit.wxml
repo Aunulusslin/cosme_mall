@@ -1,9 +1,9 @@
 <!--pages/good-submit/good-submit.wxml-->
-<view class='icon'>
+<view class='icon' bindtap='addAddress'>
   <image src='/images/add.jpg'></image>
   <text>还没有收货地址，去添加</text>
 </view>
-<view class='slit'></view>
+<!-- <view class='slit'></view> -->
 <view class='con'>
   <view class='content'>
     <image src='https://wx4.sinaimg.cn/mw690/6ae8240agy1g0rtwz49bej20u015jnaw.jpg' class='goodimg'></image>
@@ -18,6 +18,7 @@
       </view>
     </view>
   </view>
+  <!-- <view class='white'></view> -->
   <view class='tb-1'>
     <text class='left'>购买数量</text>
     <view class='stepper'>
@@ -33,13 +34,13 @@
   <view class='tb-1'>
     <text class='left'>累计满减金额</text>
     <view class='carry'>
-      <text class='carry-price'>快递：￥0</text>
+      <!-- <label style='border:none;display:inline-block;float:right'>快递：￥0</label> -->
       <text class='tip'>新用户满78包邮，已减免￥7</text>
     </view>
   </view>
   <view class='tb-1 fx'>
     <view class='lt' style='width: 570rpx;'>
-      <text>现金券</text>
+      <view style='width:100rpx;display:inline-block'>现金券</view>
       <label>1张可用</label>
     </view>
     <view class='rt'>
@@ -48,8 +49,8 @@
     </view>
   </view>
   <view class='tb-1 fx'>
-    <view class='lt'>
-      <text>红包</text>
+    <view class='lt' style='  width: 700rpx;'>
+      <view style='width:100rpx;display:inline-block'>红包</view>
       <label>1张可用</label>
     </view>
     <view class='rt'>
@@ -57,16 +58,16 @@
       <image src='/images/right.png'></image>
     </view>
   </view>
-  <view class='tb-1'>
-     <view class='rt sx'>
-        <text>共1件商品</text>
-        <view>合计:
-          <label>￥178</label>
-        </view>
-     </view>
-     <view class='lt cx'>
-        <text class='jm'>已减免￥45</text>
-        <navigator>提交订单</navigator>
-     </view>
-  </view>
 </view>
+    <view class='tb-1' style='position:fixed;bottom:0;border-top:1rpx solid #f2f2f2;justify-content:flex-start;padding:20rpx 20rpx;background:#fff;height:85rpx;paddin-right:20rpx;width:100%'>
+      <view class='rt sx'>
+          <text>共1件商品</text>
+          <view style='margin-top:6rpx'>合计:
+            <label>￥178</label>
+          </view>
+      </view>
+      <view class='lt cx' style='float:right'>
+          <text class='jm'>已减免￥45</text>
+          <navigator>提交订单</navigator>
+      </view>
+    </view>

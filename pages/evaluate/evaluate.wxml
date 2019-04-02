@@ -7,9 +7,9 @@
       <image src="{{item}}"></image>
     </view>
   </view>
-  <text>{{levelword}}</text>
+  <label style='width:84rpx'>{{levelword}}</label>
 </view>
-<view class='eva-con'>
+<!-- <view class='eva-con'>
   <image class='goodsimg' src=''></image>
   <text>物流服务</text>
   <view class="right">
@@ -17,7 +17,7 @@
       <image src="{{item}}"></image>
     </view>
   </view>
-  <text>{{levelword1}}</text>
+  <label style='width:84rpx'>{{levelword1}}</label>
 </view>
 <view class='eva-con'>
   <image class='goodsimg' src=''></image>
@@ -27,19 +27,19 @@
       <image src="{{item}}"></image>
     </view>
   </view>
-  <text>{{levelword2}}</text>
-</view>
+  <label style='width:84rpx'>{{levelword2}}</label>
+</view> -->
 
-<view class='goodo clear' style='height:140rpx'>
+<view class='goodo' style='height:140rpx'>
   <view class="weui-cells_after-title">
     <view class="weui-cell">
       <view class="weui-cell__bd">
-        <textarea class="weui-textarea" bindinput="bindTextAreaChange" placeholder="我要提出建议..." style="height: 8em" value="{{info}}" maxlength="{{noteMaxLen}}" focus />
-        <view class="weui-textarea-counter" style='font-size:28rpx;color:#999'>{{noteNowLen}}/{{noteMaxLen}}</view>
+        <textarea class="weui-textarea" bindinput="bindTextAreaChange" placeholder="宝贝满足您的期待吗?说说您的使用心得，分享给想买的他们吧" style="height: 8em;width:100%" value="{{info}}" maxlength="{{noteMaxLen}}" focus />
+        <!-- <view class="weui-textarea-counter" style='font-size:28rpx;color:#999'>{{noteNowLen}}/{{noteMaxLen}}</view> -->
       </view>
     </view>
   </view>
-  <text class='tip'>上传凭证</text>
+  <!-- <text class='tip'>上传凭证</text> -->
   <view bindtap="addUserScene" style='float:left' class='photo-con'>
     <image class="type_down_img" src="/images/photo.png"></image>
     <text style='font-size:28rpx'>点击上传</text>
@@ -47,6 +47,49 @@
   <image src='{{imgurl}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
   <image src='{{imgurl1}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
   <image src='{{imgurl2}}' style='width:130rpx;height:130rpx;padding-left:20rpx;padding-top:20rpx'></image>
+</view>
+<view style='clear:both'></view>
+
+<view class='nanonymous'>
+  <view class='nanoymous-cell'>
+    <view class='nanoymous-left'>
+      <radio>匿名</radio>  
+    </view>
+
+    <view class='nanoymous-right'>  
+      <label>你写的评价会议匿名的形式展现</label>
+    </view>
+  
+  </view>
+</view>
+<view class="white"></view>
+
+
+<view class='toMany'>
+  <view class='toMany-cell'>
+    <image src='images/store.png'></image>
+    <label>更多评价</label>
+  </view>
+</view>
+<view class='eva-con' style='padding:0'>
+  <!-- <image class='goodsimg' src=''></image> -->
+  <text>物流服务</text>
+  <view class="right">
+    <view bindtap="starTap1" data-index="{{index}}" class="star" wx:for="{{userStars1}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+  <label style='width:84rpx'>{{levelword1}}</label>
+</view>
+<view class='eva-con' style='padding:0'>
+  <!-- <image class='goodsimg' src=''></image> -->
+  <text>服务态度</text>
+  <view class="right">
+    <view bindtap="starTap2" data-index="{{index}}" class="star" wx:for="{{userStars2}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+  <label style='width:84rpx'>{{levelword2}}</label>
 </view>
 
 <view class="btnSf">

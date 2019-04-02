@@ -1,4 +1,11 @@
 /* pages/search/search.wxss */
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
 .top{
   display: flex;
   flex-direction: row;
@@ -62,5 +69,24 @@
   width: 50rpx;
   height: 50rpx;
   float: right;
-  margin: 0 30rpx
+  position: relative;
+  top:-5rpx;
+}
+.search-value{
+  float: left;
+  margin-right: 40rpx;
+  background: #f6f6f6;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.search-value label{
+  color: #000;
+  padding: 20rpx;
+  line-height: 50rpx
+}
+.search-box-cell{
+  display:inline-block;
+  margin-left:40rpx;
+  margin-top:20rpx;
+  width:100%
 }

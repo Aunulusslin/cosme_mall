@@ -1,0 +1,610 @@
+/* pages/good-detail/good-detail.wxss */
+
+page {
+  background: #ececec;
+  padding-bottom: 100rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 670rpx;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx 10rpx 10rpx;
+  background: #fff;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.after-price {
+  font-size: 40rpx;
+  color: #ba352e;
+}
+
+.info-one {
+  padding: 20rpx 0;
+}
+
+.info-one text {
+  font-size: 28rpx;
+  font-weight: bold
+}
+
+.info-one label {
+  padding: 4rpx 8rpx;
+  width: 50rpx;
+  height: 30rpx;
+  background: #ba352e;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+
+.info-two {
+  display: flex;
+  height: 180rpx;
+  justify-content: start;
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 0;
+}
+
+.good-info {
+  padding: 0rpx 20rpx;
+  font-size: 28rpx;
+  background: #fff;
+}
+
+.info-two-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.left-item {
+  width: 20%;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.info-two-right image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  left: 22rpx;
+  top: 6rpx;
+}
+
+.right-item label {
+  padding: 4rpx 8rpx;
+  width: 50rpx;
+  height: 30rpx;
+  color: #ba352e;
+  border: 1px solid #ba352e;
+  font-size: 24rpx;
+}
+
+.right-item {
+  display: flex;
+  justify-content: start;
+}
+
+.right-item text {
+  padding-left: 20rpx;
+  width: 414rpx;
+}
+
+.split {
+  height: 80rpx;
+  background: #dac6c5;
+  margin-top: 14rpx;
+}
+
+.white {
+  height: 20rpx;
+  background: #efeff4;
+}
+
+.eva-num {
+  padding: 20rpx 20rpx;
+}
+
+.evaluate {
+  background: #fff;
+}
+
+.eva-num {
+  border-bottom: 1px solid #ececec;
+}
+
+.eva-num text {
+  font-size: 28rpx;
+  color: #333;
+  display: inline-block;
+}
+
+.eva-num image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.eva-detail {
+  padding: 20rpx 20rpx;
+}
+
+.eva-tag {
+  height: 195rpx;
+  position: relative
+}
+
+.eva-tag text {
+  width: auto;
+  height: 36rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #ececec;
+  padding: 10rpx 30rpx;
+  border-radius: 90rpx;
+  float: left;
+  margin: 20rpx 20rpx;
+}
+
+.header {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.header image:first-child {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 90rpx;
+}
+
+.header text {
+  font-size: 28rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;     
+  word-break: break-all;
+  text-overflow: ellipsis;        
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;    
+}
+
+.eva-time {
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 0;
+}
+
+.eva-img {
+}
+
+.eva-img image {
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+}
+
+.eva-img image:nth-child(2) {
+  margin: 0 55rpx;
+}
+
+.dianzan {
+  padding: 20rpx 0;
+}
+
+v-like {
+  float: right;
+}
+
+v-message {
+  float: right;
+}
+
+.fixed {
+  display: flex;
+  justify-content: start;
+  position: fixed;
+  bottom: 0;
+  height: 94rpx;
+  width: 100%;
+}
+
+.fixed image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+}
+
+.addcart {
+  width: 25%;
+  font-size: 28rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #999;
+}
+
+button {
+  width: 37.5%;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background: #fae4e3;
+  color: #ba352e;
+}
+
+.detail-img {
+  width: 100%;
+}
+
+/* 固定 */
+
+.chartfix {
+  width: 100%;
+  height: 104rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.chartfix image {
+  width: 44rpx;
+  height: 44rpx;
+  margin: 0 auto;
+}
+
+.home, .talk, .chartcar {
+  float: left;
+  width: 14%;
+  background: #efeff4;
+  text-align: center;
+  height: 100%;
+  padding-top: 10rpx;
+}
+
+.shouc .span .active {
+  color: red;
+}
+
+.home .span, .talk .span, .chartcar .span {
+  display: block;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.orange, .red {
+  width: 29%;
+  height: 100%;
+  background: orange;
+  float: left;
+  line-height: 104rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.red {
+  background: #ba352e;
+}
+
+#panel {
+  /* background: url('../img/shut.png');
+    background-size: 90%; */
+  height: 720rpx;
+  width: 100%;
+  z-index: 2;
+  bottom: 0;
+  position: fixed;
+  background: #fff;
+}
+
+#shut {
+  width: 10%;
+  float: right;
+  /* padding: 10rpx 10rpx; */
+  float: left;
+}
+
+#shut image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.ti {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.infoimg {
+  width: 90%;
+  float: left;
+}
+
+.infoimg image {
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  margin-top: -40rpx;
+  margin-right: 40rpx;
+  border: 1rpx solid #fff;
+}
+
+.infow {
+  float: left;
+}
+
+.colorch {
+  padding: 40rpx 20rpx;
+  border-bottom: 1rpx solid #ececec;
+  color: #000;
+  font-size: 32rpx;
+}
+
+.colorch button:nth-child(1) {
+  font-size: 28rpx;
+  float: left;
+  border: 1rpx solid #df3348;
+  border-radius: 10rpx;
+  background: none;
+  color: #df3348;
+  margin-right: 20rpx;
+  padding: 8rpx 30rpx;
+  line-height: 50rpx;
+}
+
+.colorch button:nth-child(2) {
+  font-size: 28rpx;
+  border: 1rpx solid #ececec;
+  border-radius: 10rpx;
+  background: none;
+  padding: 8rpx 30rpx;
+  float: left;
+  line-height: 50rpx;
+}
+
+.color-con {
+  margin-top: 20rpx;
+}
+
+.h1 {
+  color: #df3348;
+  font-size: 28rpx;
+}
+
+.h2 {
+  color: #333;
+  font-size: 28rpx;
+  padding: 12rpx 0;
+}
+
+strong {
+  float: left;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.numb {
+  padding: 20rpx 20rpx;
+}
+
+.stepper {
+  width: 80px;
+  height: 26px;
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  float: right;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+.qd {
+  height: 80rpx;
+  width: 100%;
+  background: #67a3f8;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.tab {
+  /* display: flex; */
+  flex-direction: row;
+}
+
+.tab-left {
+  font-size: 28rpx;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  background: #fff;
+}
+
+.tab-left>view {
+  width: 50%;
+  padding: 20rpx 0;
+}
+
+.tab-left .active {
+  color: rgb(240, 62, 62);
+  border-bottom: 3px solid rgb(240, 62, 62);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.tab-right {
+  width: 100%;
+}
+
+.tab-right .right-item {
+  display: none;
+}
+
+.tab-right .right-item.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.like {
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.like-list {
+  width: 33.33%;
+  background: #fff;
+  /* padding: 10rpx 10rpx; */
+  float: left;
+  border-bottom: 1px solid #dedede;
+}
+
+.like-list image {
+  width: 88%;
+  height: 216rpx;
+  margin: 0 auto;
+  padding: 20rpx 16rpx;
+  padding-bottom: 0rpx;
+}
+
+.like-info {
+  /* text-align: center; */
+  height: 40rpx;
+  overflow: hidden;
+  padding: 12rpx 16rpx;
+  width: 88%;
+  display: block;
+  font-size: 28rpx;
+}
+.like-price{
+  margin-bottom: 10rpx
+}
+
+.like-price .span {
+  padding: 8rpx 16rpx;
+  display: inline;
+}
+
+.like-pricenow {
+  color: #e73645;
+  font-size: 32rpx;
+  padding-top: 20rpx;
+}
+
+.like-pricepre {
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+.user-name{
+  position: relative;
+  top: 16rpx;
+  left: -61rpx
+}
+.user-name image{
+  margin-left: 10rpx;
+  position: relative;
+  top:7rpx
+}
+.list-itemleft{
+    float: left;
+    display: flex;align-items: center;
+}
+.list-itemleft .span{
+    margin:0 10rpx;
+    font-size: 24rpx;
+    color: #000;
+}
+.list-itemleft image{
+    display: inline-block;
+    width: 32rpx;
+    height: 32rpx;
+    align-items: center;
+}
+.eva-introduce{
+  font-size: 26rpx
+}
+.li-con{
+  display: inline-block;
+  margin-left: 10rpx
+}
+.eva-introduce text{
+  border:1rpx solid #ba352e;
+  color:#ba352e;
+  font-size:25rpx;
+  margin-right: 10rpx
+}
+.goods-spec{
+  background: #fff;
+  display: flex;
+  padding-bottom: 15rpx;
+  color: #999;
+}
+.goods-spec1{
+  background: #fff;
+  margin: auto;
+  text-align: center
+}

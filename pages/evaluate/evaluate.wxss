@@ -14,11 +14,11 @@
   height: 34rpx;
   text-align: center;
   line-height: 54rpx;
-  padding: 18rpx 20rpx;
+  padding: 18rpx 14rpx;
 }
 .star image{
-  width: 48rpx;
-  height: 48rpx;
+  width:35rpx;
+  height: 35rpx;
 }
 .goodsimg{
   width: 100rpx;
@@ -28,13 +28,14 @@
   width: 370rpx
 }
 .goodo {
-  padding: 15rpx 30rpx;
+  padding: 15rpx 0rpx;
   /* height: 60rpx; */
   line-height: 60rpx;
 }
 .photo-con {
   border: 1px dashed #ececec;
   padding: 20rpx 20rpx;
+  margin-left: 20rpx
 }
 .goodo .tip{
   display: block;
@@ -50,11 +51,10 @@
 .weui-cells_after-title{
   width: 92%;
   margin:0 auto;
-  border:1px solid #ddd;
+  /* border:1px solid #ddd; */
 }
 .btnSf{
-  width: 92%;
-  margin-left: 4%;
+  width: 100%;
   position: fixed;
   bottom: 0
 }
@@ -66,4 +66,42 @@
 .btnSf button:active{
   background: #ba352e;
   color: #fff;
+}
+.eva-title-left label{
+  position: relative;
+  bottom: 20rpx;
+}
+.nanonymous{
+  width: 100%;
+  margin-top: 30rpx
+}
+.nanoymous-left{
+  display: inline-block
+}
+.nanoymous-right{
+display: inline-block;
+float: right;
+}
+.nanoymous-cell{
+  padding: 20rpx;
+  margin: 20rpx;
+  border-top: 1rpx solid #ececec;
+  margin-bottom: 0
+}
+.white{
+  width: 100%;
+  height: 30rpx;
+  background: #f3f3f3
+}
+.toMany-cell{
+  padding: 20rpx
+}
+.toMany-cell image{
+  width: 50rpx;
+  height: 50rpx
+}
+.toMany-cell label{
+  margin-left: 10rpx;
+  position: relative;
+  bottom: 10rpx
 }

@@ -1,4 +1,4 @@
-<!--components/floor/floor.wxml-->
+<!-- components/floor/floor.wxml -->
 <view class='container'>
   <view class='banner'>
     <image src='{{floorPic}}'></image>
@@ -9,15 +9,15 @@
         <view class='good-info'>
           <text class='title'>{{item.goodsName}}</text>
           <view class='tag'>
-            <label>减</label>
-            <text>满179减68元</text>
+            <!-- <label>减</label>
+            <text>满179减68元</text> -->
           </view>
           <view class='bottom clear'>
             <view class='left'>
               <text class='price'>￥{{item.goodsPrice}}</text>
               <text class='evaluate'>6.3万条评论</text>
             </view>
-            <image src='images/chart.png'></image>
+            <!-- <image src='images/chart.png'></image> -->
           </view>
         </view>
       </navigator>

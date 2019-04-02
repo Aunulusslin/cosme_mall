@@ -3,11 +3,24 @@
     <image src="{{img}}{{showcaseBanner}}"></image>
 </view>
 
-<view class='case-list'>
-   <view class='list-con' wx:for="{{caseArray}}" wx:key="unique" wx:for-item="item">
+<view class='showcase-title'>
+  <view class='showcase-title-cell'>
+    <image src='/images/masonry.png'></image>
+    <label>{{showcaseName}}</label>
+  </view>
+  <!-- <image src='/images/masonry.png'></image> -->
+</view>
+<!-- 产品楼层 -->
+<v-showcase goodsList="{{caseArray}}"  wx:for-item="item"/>
+
+
+<!-- <view style='width:100%;height:20rpx;background:#f3f3f3'></view> -->
+
+<!-- <view class='case-list'>
+   <view class='list-con' wx:for="{{caseArray}}" wx:key="unique" wx:for-item="item" bindtap='Jump_goodsDetail' data-=''>
       <image src='{{img}}{{item.goodsPic}}'></image>
       <view>
         <text>{{item.goodsDescription}}</text>
       </view>
    </view>
-</view>
+</view> -->

@@ -30,7 +30,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var currtab = options.currtab
+    var that =this
+    console.log("222:" + currtab)
+    that.setData({
+      currtab:currtab
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -58,7 +63,7 @@ Page({
    */
   tabSwitch: function(e) {
     var that = this
-    if (this.data.currtab === e.target.dataset.current) {
+    if (that.data.currtab === e.target.dataset.current) {
       return false
     } else {
       that.setData({
@@ -76,7 +81,8 @@ Page({
 
   orderShow: function() {
     let that = this
-    switch (this.data.currtab) {
+    console.log(that.data.currtab)
+    switch (that.data.currtab) {
       case 0:
         that.alreadyShow()
         break
@@ -117,9 +123,11 @@ Page({
   waitPayShow: function() {
     this.setData({
       waitPayOrder: [{
+        id: "E768970909-079-80-0798",
         name: "跃动体育运动俱乐部(圆明园店)",
         state: "待付款",
         time: "2018-10-14 14:00-16:00",
+        info: "雅诗兰黛小棕瓶抗蓝光持久保湿",
         status: "未开始",
         url: "https://wx2.sinaimg.cn/mw690/6ae8240agy1g0vck5v4baj20u00u07dw.jpg",
         money: "186"
@@ -130,7 +138,9 @@ Page({
   lostShow: function() {
     this.setData({
       lostOrder: [{
+        id: "E768970909-079-80-0798",
         name: "跃动体育运动俱乐部(圆明园店)",
+        info: "雅诗兰黛小棕瓶抗蓝光持久保湿",
         state: "待发货",
         time: "2018-10-4 10:00-12:00",
         status: "未开始",
@@ -143,7 +153,9 @@ Page({
   evaOrder: function() {
     this.setData({
       evaOrder: [{
+        id: "E768970909-079-80-0798",
         name: "跃动体育运动俱乐部(圆明园店)",
+        info: "雅诗兰黛小棕瓶抗蓝光持久保湿",
         state: "待发货",
         time: "2018-10-4 10:00-12:00",
         status: "未开始",
@@ -156,7 +168,9 @@ Page({
   sentOrder: function() {
     this.setData({
       sentOrder: [{
+        id: "E768970909-079-80-0798",
         name: "跃动体育运动俱乐部(圆明园店)",
+        info: "雅诗兰黛小棕瓶抗蓝光持久保湿",
         state: "已发货",
         time: "2018-10-4 10:00-12:00",
         status: "未开始",

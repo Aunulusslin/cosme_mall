@@ -1,0 +1,10 @@
+<!--pages/counter/countre.wxml-->
+<view class="top">
+  <view class="topcon">
+    <view class="view">应付金额</view>
+    <view class="strong">￥{{advTaskTotalPrice}}</view>
+  </view>
+</view>
+<view class="check">
+  <button type="button" bindtap='topay' hover-class='none'>确认支付</button>
+</view>

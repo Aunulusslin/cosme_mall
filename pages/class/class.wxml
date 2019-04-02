@@ -1,6 +1,6 @@
 <!--pages/class/class.wxml-->
-<v-search/>
-<v-navigation  cateItems="{{cateItems}}"/>
+<v-search-class/>
+<v-navigation  cateItems="{{cateItems}}" firstId="{{fistGoodsClassId}}"/>
 <!-- tabbar -->
 <view style='position:fixed;width:100%;height:200rpx'>
   <import src="../../template/nav" />

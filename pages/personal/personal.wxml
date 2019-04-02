@@ -18,7 +18,7 @@
 <!-- 积分卡包 -->
 <view class='card-pocket'>
   <view class='card-one'>
-    <image src='/images/card1.png'></image>
+    <image src='/images/card1.png' style='width:50rpx;height:50rpx'></image>
     <text style='font-size:28rpx;'>我的钱包</text>
   </view>
   <view class='card-two' style='border-right:1px solid #ececec'>
@@ -38,45 +38,52 @@
 </view>
 <view class='band'></view>
 <view class='my-order'>
-  <text class='title'>我的订单</text>
-  <view class="flex state">
- 
-    <navigator class="stateItem icon-pay" url='/pages/my-order/my-order'>
- 
-      <text>待付款</text>
- 
-    </navigator>
- 
-    <navigator class="stateItem icon-deliver" url='/pages/my-order/my-order'>
- 
-      <text>待发货</text>
- 
-    </navigator>
- 
-    <navigator class="stateItem icon-send" url='/pages/my-order/my-order'>
- 
-      <text>待签收</text>
- 
-    </navigator>
- 
-    <navigator class="stateItem icon-goodsnew"url='/pages/my-order/my-order'>
- 
-      <text>已完成</text>
- 
-    </navigator>
- 
-    <navigator class="stateItem icon-post"url='/pages/my-order/my-order'>
- 
-      <text>待评价</text>
- 
-    </navigator>
- 
+  <view class='title'>
+    <label class='title-cells'>我的订单</label>
+    <view class='left' style='float:right' bindtap='allOrders'>
+      <label class='title-cells' style='font-size:24rpx;letter-spacing: 2rpx;color:#8d9195'>查看更多</label>
+      <image src='/images/right.png' style='margin-left:10rpx'></image>
+    </view>
+
   </view>
- 
+  <view class="flex state">
+
+    <navigator class="stateItem icon-pay" hover-class='none' navitag-open-type='redirectTo' url='/pages/my-order/my-order?currtab=1'>
+
+      <text>待付款</text>
+
+    </navigator>
+
+    <navigator class="stateItem icon-deliver" hover-class='none' navitag-open-type='redirectTo' url='/pages/my-order/my-order?currtab=2'>
+
+      <text>待发货</text>
+
+    </navigator>
+
+    <navigator class="stateItem icon-send" hover-class='none' navitag-open-type='redirectTo' url='/pages/my-order/my-order?currtab=3'>
+
+      <text>待签收</text>
+
+    </navigator>
+
+    <navigator class="stateItem icon-goodsnew" hover-class='none' navitag-open-type='redirectTo' url='/pages/my-order/my-order'>
+
+      <text>已完成</text>
+
+    </navigator>
+
+    <navigator class="stateItem icon-post" hover-class='none' navitag-open-type='redirectTo' url='/pages/my-order/my-order?currtab=4'>
+
+      <text>待评价</text>
+
+    </navigator>
+
+  </view>
+
 </view>
 <view class='band'></view>
 
-<view class='categrorys clear' >
+<view class='categrorys clear'>
   <block wx:for="{{navigationList}}" wx:key="{{index}}" wx:for-item="item">
     <navigator class='categrory-list' data-name="{{item.navigationUrl}}" bindtap='navigationUrl'>
       <image src='{{item.navigationPic}}' class='my-class'></image>

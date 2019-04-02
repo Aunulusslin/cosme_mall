@@ -1,0 +1,19 @@
+<!--pages/add-address/add-adress.wxml-->
+<form bindsubmit="formSubmit" type="post">
+  <!-- 提示警告! -->
+  <view class='wran-tips' style='{{displayWarn}}'>
+    <text>{{warnInfo}}</text>
+  </view>
+    <input type='text' placeholder='姓名' name='userName'></input>
+    <input maxlength='11' type='number' placeholder='手机号码' name='photoNumber' type='number'></input>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+    <input type='text' placeholder='详细地址，如街道、楼盘号等' name='detailMessage'></input>
+    <label class="checkbox" style='margin-top:30rpx'>
+      <checkbox value="设为默认" checked="{{checked}}" color="#ba352e" /> 设为默认地址
+    </label>
+  <button class='add-address' form-type='submit'>+保存</button>
+</form>

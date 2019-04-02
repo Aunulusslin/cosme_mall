@@ -19,14 +19,14 @@
                 <text class="txt"  style='margin-top:30rpx;text-align:center'>{{name}}</text>
             </navigator>
           </block>
-          <block wx:if="{{style==1}}">
+          <!-- <block wx:if="{{style==1}}">
             <navigator url='{{adurl}}' hover-class="none">
                 <view class="plus_wp">
                   <image src='/images/community1.png' class="plus_ico" />
                 </view>
                 <text class="txt">{{name}}</text>
             </navigator>
-          </block>
+          </block> -->
         </button> 
       </view>
 </template>

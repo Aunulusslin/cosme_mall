@@ -1,0 +1,66 @@
+page {
+  background: #f7f7f7;
+}
+
+.content {
+  width: 100%;
+  height: 225rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.content image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 90rpx;
+}
+
+.title {
+  text-align: center;
+  color: #5b5b5b;
+}
+
+.money {
+  text-align: center;
+  color: #ba352e;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.header{
+  background: #fff
+}
+.pay_type{
+  background: #fff;
+  margin-top: 3rpx;
+}
+.pay_type_cell{
+  padding: 30rpx;
+}
+.btn-cells{
+  margin-top: 30rpx;
+}
+.active{
+  width: 202rpx;
+  height:78rpx;
+  float: left;
+  margin-left:35rpx;
+  background: #ba352e;
+  font-size: 30rpx;
+  color: #fff
+}
+.noActive{
+  width: 202rpx;
+  height:78rpx;
+  float: left;
+  margin-left:35rpx;
+  background: #fff;
+  font-size: 30rpx;
+}
+.prompt label{
+  font-size: 25rpx;
+  color: #8f8f8f
+}
+.prompt{
+  margin: 50rpx 35rpx 0 35rpx;
+}
